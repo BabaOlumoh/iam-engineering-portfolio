@@ -122,7 +122,7 @@ Example:
 
 | New Role | Required Groups |
 |---|---|
-| IAM Analyst | GG_All_Employees, GG_IT_All, GG_IT_IAM_Analysts, APP_ServiceNow_ITIL, PIM_Entra_UserAdmin_Eligible |
+| IAM Analyst | GG_All_Employees, GG_DEPT_IT_All, GG_IT_IAM_Analysts, APP_ServiceNow_ITIL, PIM_Entra_UserAdmin_Eligible |
 
 ---
 
@@ -241,7 +241,7 @@ Validation checks:
 | Field | Value |
 |---|---|
 | Name | Amina Yusuf |
-| Username | ayusuf |
+| Username | amina.yusuf |
 | Previous Department | Finance |
 | New Department | IT |
 | Previous Role | Finance Analyst |
@@ -252,8 +252,8 @@ Validation checks:
 | Group | Reason |
 |---|---|
 | GG_FIN_All | No longer in Finance |
-| GG_FIN_Analysts | No longer Finance Analyst |
-| DL_FS_Finance_RW | Finance file share no longer required |
+| GG_DEPT_FINANCE_ASSOCIATE | No longer Finance Analyst |
+| DL_FS_Finance_READ | Finance file share no longer required |
 | APP_FinanceSystem_Users | Finance system no longer required |
 
 ### Access Added
@@ -284,7 +284,7 @@ Example:
 
 | Field | Value |
 |---|---|
-| User | ayusuf |
+| User | aminayusuf |
 | Old Access Retained | APP_FinanceSystem_Users |
 | Reason | Two-week handover |
 | Approved By | Finance Manager |
@@ -305,7 +305,7 @@ Example:
 
 ---
 
-## Evidence to Capture
+##Screenshots
 
 - HR change record or ticket reference
 - Before group membership
