@@ -17,7 +17,7 @@ The goal of this portfolio is to demonstrate practical IAM skills, including:
 
 | Project | Skills Demonstrated |
 |---|---|
-| Identity Lifecycle JML | Joiner, mover, leaver, source of truth, automation | 01-identity-lifecycle-jml |
+| 01-identity-lifecycle-jml | Joiner, mover, leaver, source of truth, automation |
 | Hybrid AD + Entra ID | Entra Connect, AD groups, sync, hybrid identity |
 | RBAC AGDLP Model | Role-based access, group nesting, least privilege |
 | Conditional Access Lab | MFA, device compliance, risk-based access |
