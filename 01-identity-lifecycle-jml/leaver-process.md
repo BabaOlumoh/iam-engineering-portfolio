@@ -153,9 +153,9 @@ Priority removal groups:
 | Group Type | Example |
 |---|---|
 | Privileged groups | PIM_Entra_UserAdmin_Eligible |
-| Department groups | GG_FIN_All |
-| Role groups | GG_FIN_Analysts |
-| File share groups | DL_FS_Finance_RW |
+| Department groups | GG_DEPT_FINANCE_All |
+| Role groups | GG_DEPT_FINANCE_ASSOCIATE |
+| File share groups | DL_FS_Finance_READ |
 | Application groups | APP_FinanceSystem_Users |
 | Licence groups | LIC_M365_E3 |
 
@@ -274,12 +274,12 @@ Contain first, document immediately after.
 | Field | Value |
 |---|---|
 | Name | Amina Yusuf |
-| Username | ayusuf |
+| Username | amina.yusuf |
 | Department | Finance |
-| Job Title | Finance Analyst |
+| Job Title | Finance Associate |
 | Final Working Date | 2026-07-01 |
 | Leaver Type | Standard leaver |
-| Manager | Sarah Johnson |
+| Manager | Emma Watson |
 | Ticket | IAM-12345 |
 
 ### Actions Completed
@@ -309,7 +309,7 @@ Contain first, document immediately after.
 
 ---
 
-## Evidence to Capture
+## Screenshots
 
 - HR leaver request or ticket reference
 - AD disabled account screenshot
