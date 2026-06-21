@@ -234,31 +234,65 @@ Validation checks:
 | Task | Completed |
 |---|---|
 | HR record approved | ✓ |
-<img width="1215" height="223" alt="Screenshot 2026-06-21 at 18 33 32" src="https://github.com/user-attachments/assets/7400b51e-46e7-4a9c-a557-0384d5d0cbef" />
 | Mandatory fields validated | ✓ |
-
 | Username and UPN generated | ✓ |
-<img width="896" height="646" alt="Screenshot 2026-06-21 at 18 00 24" src="https://github.com/user-attachments/assets/311da314-850e-453b-93ce-6024db2b26e0" />
 | AD account created | ✓ |
-<img width="501" height="682" alt="Screenshot 2026-06-21 at 18 35 27" src="https://github.com/user-attachments/assets/4d0d17e0-ac4f-46f1-bcee-1eaf986daf81" />
 | Correct OU assigned | ✓ |
-<img width="497" height="674" alt="Screenshot 2026-06-21 at 18 09 51" src="https://github.com/user-attachments/assets/17819b1c-a46d-4d2c-abb3-98ed5e0a3f0c" />
 | Attributes populated | ✓ |
-<img width="501" height="682" alt="Screenshot 2026-06-21 at 18 35 27" src="https://github.com/user-attachments/assets/562da744-aca1-4ead-b9a2-8c3eddd0afb9" />
 | Baseline groups assigned | ✓ |
-<img width="498" height="675" alt="Screenshot 2026-06-21 at 18 06 47" src="https://github.com/user-attachments/assets/43127ba3-a193-457b-804d-0f66bda6e458" />
 | Role groups assigned | ✓ |
-<img width="498" height="675" alt="Screenshot 2026-06-21 at 18 06 47" src="https://github.com/user-attachments/assets/43127ba3-a193-457b-804d-0f66bda6e458" />
 | Account synced to Entra ID | ✓ |
-<img width="940" height="70" alt="Screenshot 2026-06-21 at 18 15 43" src="https://github.com/user-attachments/assets/8b3cdd88-4bed-41b6-a436-31485f014c3c" />
-<img width="658" height="678" alt="Screenshot 2026-06-21 at 18 36 47" src="https://github.com/user-attachments/assets/07cf466e-86fe-4f46-aafe-dd63c945d742" />
 | Licence assigned | ✓ |
-<img width="980" height="363" alt="Screenshot 2026-06-21 at 18 51 36" src="https://github.com/user-attachments/assets/ac85e45c-81b7-4a9c-b5d7-6e67126efde1" />
 | MFA/access policies apply | ✓ |
-<img width="971" height="371" alt="Screenshot 2026-06-21 at 18 52 07" src="https://github.com/user-attachments/assets/bf1dfba0-87dd-4036-bec8-559d83403dbb" />
 | Evidence captured | ✓ |
 | Manager/Service Desk notified | ✓ |
 | Lifecycle Workflow | ✓ |
+
+
+**| HR record approved | ✓ |**
+<img width="1215" height="223" alt="Screenshot 2026-06-21 at 18 33 32" src="https://github.com/user-attachments/assets/7400b51e-46e7-4a9c-a557-0384d5d0cbef" />
+
+
+**| Username and UPN generated | ✓ |**
+
+<img width="896" height="646" alt="Screenshot 2026-06-21 at 18 00 24" src="https://github.com/user-attachments/assets/311da314-850e-453b-93ce-6024db2b26e0" />
+
+**| AD account created | ✓ |**
+
+<img width="501" height="682" alt="Screenshot 2026-06-21 at 18 35 27" src="https://github.com/user-attachments/assets/4d0d17e0-ac4f-46f1-bcee-1eaf986daf81" />
+
+**| Correct OU assigned | ✓ |**
+
+<img width="497" height="674" alt="Screenshot 2026-06-21 at 18 09 51" src="https://github.com/user-attachments/assets/17819b1c-a46d-4d2c-abb3-98ed5e0a3f0c" />
+
+**| Attributes populated | ✓ |**
+
+<img width="501" height="682" alt="Screenshot 2026-06-21 at 18 35 27" src="https://github.com/user-attachments/assets/562da744-aca1-4ead-b9a2-8c3eddd0afb9" />
+
+**| Baseline groups assigned | ✓ |**
+
+<img width="498" height="675" alt="Screenshot 2026-06-21 at 18 06 47" src="https://github.com/user-attachments/assets/43127ba3-a193-457b-804d-0f66bda6e458" />
+
+| Role groups assigned | ✓ |
+
+<img width="498" height="675" alt="Screenshot 2026-06-21 at 18 06 47" src="https://github.com/user-attachments/assets/43127ba3-a193-457b-804d-0f66bda6e458" />
+
+**Account synced to Entra ID**
+<img width="940" height="70" alt="Screenshot 2026-06-21 at 18 15 43" src="https://github.com/user-attachments/assets/8b3cdd88-4bed-41b6-a436-31485f014c3c" />
+<img width="658" height="678" alt="Screenshot 2026-06-21 at 18 36 47" src="https://github.com/user-attachments/assets/07cf466e-86fe-4f46-aafe-dd63c945d742" />
+
+**| Licence assigned | ✓ |**
+<img width="980" height="363" alt="Screenshot 2026-06-21 at 18 51 36" src="https://github.com/user-attachments/assets/ac85e45c-81b7-4a9c-b5d7-6e67126efde1" />
+
+**| MFA/access policies apply | ✓ |**
+<img width="971" height="371" alt="Screenshot 2026-06-21 at 18 52 07" src="https://github.com/user-attachments/assets/bf1dfba0-87dd-4036-bec8-559d83403dbb" />
+<img width="807" height="734" alt="Screenshot 2026-06-21 at 18 56 08" src="https://github.com/user-attachments/assets/d18e1495-96c5-4f98-b5e1-f9b1a1e2f0ca" />
+
+**| Evidence captured | ✓ |**
+
+**| Manager/Service Desk notified | ✓ |**
+
+**| Lifecycle Workflow | ✓ |**
 <img width="810" height="510" alt="Screenshot 2026-06-21 at 18 26 39" src="https://github.com/user-attachments/assets/91ff7bda-5c7c-455c-8723-86756a6edfd7" />
 <img width="977" height="438" alt="Screenshot 2026-06-21 at 18 18 27" src="https://github.com/user-attachments/assets/ad73a25c-e47f-4544-9572-63b9be75cc98" />
 
