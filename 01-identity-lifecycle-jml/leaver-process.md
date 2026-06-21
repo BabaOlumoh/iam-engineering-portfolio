@@ -153,9 +153,9 @@ Priority removal groups:
 | Group Type | Example |
 |---|---|
 | Privileged groups | PIM_Entra_UserAdmin_Eligible |
-| Department groups | GG_DEPT_FINANCE_All |
-| Role groups | GG_DEPT_FINANCE_ASSOCIATE |
-| File share groups | DL_FS_Finance_READ |
+| Department groups | GG_DEPT_IT_All |
+| Role groups | GG_DEPT_IT_ASSOCIATE |
+| File share groups | DL_FS_IT_READ |
 | Application groups | APP_FinanceSystem_Users |
 | Licence groups | LIC_M365_E3 |
 
@@ -246,6 +246,19 @@ Contain first, document immediately after.
 ```
 
 ---
+## Leaver Lifecycle Workflow
+<img width="989" height="447" alt="Screenshot 2026-06-21 at 19 13 26" src="https://github.com/user-attachments/assets/82301192-ed53-48f2-a8c0-d8a90a7a1469" />
+
+<img width="953" height="569" alt="Screenshot 2026-06-21 at 19 14 22" src="https://github.com/user-attachments/assets/27535a4d-ed9c-42a9-8455-6f1203bf5b00" />
+
+<img width="839" height="486" alt="Screenshot 2026-06-21 at 19 14 40" src="https://github.com/user-attachments/assets/ee1f49de-1ad6-4c2d-89d4-cded7326f5b8" />
+
+<img width="941" height="355" alt="Screenshot 2026-06-21 at 19 16 32" src="https://github.com/user-attachments/assets/8aa37475-72c6-4f49-a3d7-eaa8d5069016" />
+
+<img width="759" height="543" alt="Screenshot 2026-06-21 at 19 17 17" src="https://github.com/user-attachments/assets/a0a387e4-0688-4a0e-8a66-2052aa7cadbf" />
+
+<img width="625" height="434" alt="Screenshot 2026-06-21 at 19 18 18" src="https://github.com/user-attachments/assets/d78b06bc-c426-4d39-b900-3a82e47eaa5d" />
+
 
 ## Leaver Checklist
 
@@ -273,13 +286,13 @@ Contain first, document immediately after.
 
 | Field | Value |
 |---|---|
-| Name | Amina Yusuf |
-| Username | amina.yusuf |
-| Department | Finance |
-| Job Title | Finance Associate |
+| Name | Adam Carter |
+| Username | adam.carter |
+| Department | IT |
+| Job Title | System Administrator |
 | Final Working Date | 2026-07-01 |
 | Leaver Type | Standard leaver |
-| Manager | Emma Watson |
+| Manager | Olivia Bennett |
 | Ticket | IAM-12345 |
 
 ### Actions Completed
@@ -289,7 +302,7 @@ Contain first, document immediately after.
 | Disable AD account | Completed |
 | Move to Disabled Users OU | Completed |
 | Revoke Entra sessions | Completed |
-| Remove Finance groups | Completed |
+| Remove IT groups | Completed |
 | Remove M365 licence | Completed after mailbox review |
 | Convert mailbox | Completed if manager approved |
 | Capture evidence | Completed |
@@ -309,7 +322,7 @@ Contain first, document immediately after.
 
 ---
 
-## Screenshots
+## Evidence to Capture
 
 - HR leaver request or ticket reference
 - AD disabled account screenshot
