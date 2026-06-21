@@ -234,6 +234,8 @@ Validation checks:
 | Task | Completed |
 |---|---|
 | HR record approved | ☐ |
+<img width="1215" height="223" alt="Screenshot 2026-06-21 at 18 33 32" src="https://github.com/user-attachments/assets/7400b51e-46e7-4a9c-a557-0384d5d0cbef" />
+
 | Mandatory fields validated | ☐ |
 | Username and UPN generated | ☐ |
 | AD account created | ☐ |
