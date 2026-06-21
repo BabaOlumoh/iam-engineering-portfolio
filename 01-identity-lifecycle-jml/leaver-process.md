@@ -123,12 +123,6 @@ Recommended actions:
 - Update description with leaver date and ticket reference
 - Hide from address lists if required
 
-Example description format:
-
-```text
-Disabled as leaver on 2026-07-01. Ticket: IAM-12345.
-```
-
 ---
 
 ### Step 4: Revoke Cloud Sessions
@@ -158,8 +152,6 @@ Priority removal groups:
 | File share groups | DL_FS_IT_READ |
 | Application groups | APP_FinanceSystem_Users |
 | Licence groups | LIC_M365_E3 |
-
-Some organisations retain a minimal leaver group or disabled account marker group for reporting.
 
 ---
 
@@ -238,14 +230,22 @@ For emergency leavers, the order changes:
 5. Complete group/licence/mailbox cleanup
 6. Document evidence after containment
 ```
-
-The principle is:
-
-```text
-Contain first, document immediately after.
-```
-
 ---
+
+## Example Leaver Scenario
+
+| Field | Value |
+|---|---|
+| Name | Adam Carter |
+| Username | adam.carter |
+| Department | IT |
+| Job Title | System Administrator |
+| Final Working Date | 2026-07-01 |
+| Leaver Type | Standard leaver |
+| Manager | Olivia Bennett |
+| Ticket | IAM-12345 |
+---
+
 ## Leaver Lifecycle Workflow
 <img width="989" height="447" alt="Screenshot 2026-06-21 at 19 13 26" src="https://github.com/user-attachments/assets/82301192-ed53-48f2-a8c0-d8a90a7a1469" />
 
@@ -259,6 +259,7 @@ Contain first, document immediately after.
 
 <img width="625" height="434" alt="Screenshot 2026-06-21 at 19 18 18" src="https://github.com/user-attachments/assets/d78b06bc-c426-4d39-b900-3a82e47eaa5d" />
 
+---
 
 ## Leaver Checklist
 
@@ -281,19 +282,6 @@ Contain first, document immediately after.
 | Ticket/change closed | ☐ |
 
 ---
-
-## Example Leaver Scenario
-
-| Field | Value |
-|---|---|
-| Name | Adam Carter |
-| Username | adam.carter |
-| Department | IT |
-| Job Title | System Administrator |
-| Final Working Date | 2026-07-01 |
-| Leaver Type | Standard leaver |
-| Manager | Olivia Bennett |
-| Ticket | IAM-12345 |
 
 ### Actions Completed
 
