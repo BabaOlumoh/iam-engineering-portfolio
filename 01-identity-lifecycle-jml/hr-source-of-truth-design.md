@@ -61,7 +61,7 @@ flowchart TD
 
 ```csv
 EmployeeID,FirstName,LastName,PreferredName,StartDate,EndDate,EmploymentStatus,Department,JobTitle,ManagerEmail,Office,ContractType
-EMP1001,Amina,Yusuf,Amina,2026-07-01,,Active,Finance,Finance Analyst,manager@iamhomelab.com,Milton Keynes,Permanent
+EMP1001,Amina,Yusuf,Amina,2026-07-01,,Active,Finance,Finance Analyst,emma.watson@ogkareemu.live,Milton Keynes,Permanent
 ```
 
 ---
@@ -74,11 +74,11 @@ EMP1001,Amina,Yusuf,Amina,2026-07-01,,Active,Finance,Finance Analyst,manager@iam
 | FirstName | givenName | givenName | Amina |
 | LastName | sn | surname | Yusuf |
 | FirstName + LastName | displayName | displayName | Amina Yusuf |
-| Generated username | sAMAccountName | onPremisesSamAccountName | ayusuf |
-| Generated UPN | userPrincipalName | userPrincipalName | ayusuf@iamhomelab.com |
+| Generated username | sAMAccountName | onPremisesSamAccountName | aamina.yusuf |
+| Generated UPN | userPrincipalName | userPrincipalName | amina.yusuf@ogkareemu.live |
 | Department | department | department | Finance |
 | JobTitle | title | jobTitle | Finance Analyst |
-| Manager | manager | manager | manager@iamhomelab.com |
+| Manager | manager | manager | emaa.watson@ogkareemu.live |
 | Office | physicalDeliveryOfficeName | officeLocation | Milton Keynes |
 | ContractType | extensionAttribute1 | employeeType | Permanent |
 
@@ -97,25 +97,25 @@ firstinitiallastname
 Example:
 
 ```text
-Amina Yusuf -> ayusuf
+Amina Yusuf -> amina.yusuf
 ```
 
 If the username already exists, append a number:
 
 ```text
-ayusuf2
+amina.yusuf2
 ```
 
 ### UPN
 
 ```text
-username@iamhomelab.com
+amina.yusuf@ogkareemu.live
 ```
 
 Example:
 
 ```text
-ayusuf@iamhomelab.com
+amina.yusuf@ogkareemu.live
 ```
 
 ### Display Name
@@ -182,7 +182,7 @@ Example mapping:
 | GG | Global Group for users with similar role or department | GG_FIN_Analysts |
 | DL | Domain Local Group used to assign permissions to resources | DL_FS_Finance_RW |
 | APP | Application access group | APP_ServiceNow_ITIL |
-| LIC | Licence assignment group | LIC_M365_E3 |
+| LIC | Licence assignment group | LIC_M365_E5 |
 | CA | Conditional Access targeting group | CA_Require_MFA_Admins |
 | PIM | Privileged access group | PIM_Entra_UserAdmin_Eligible |
 
