@@ -113,15 +113,15 @@ Example:
 
 ```text
 Name: Amina Yusuf
-Username: ayusuf
-UPN: ayusuf@iamhomelab.com
-Email: ayusuf@iamhomelab.com
+Username: amina.yusuf
+UPN: amina.yusuf@ogkareemu.live
+Email: amina.yusuf@ogkareemu.live
 ```
 
 If the username already exists:
 
 ```text
-ayusuf2@iamhomelab.com
+amina.yusuf2@ogkareemu.live
 ```
 
 ---
@@ -176,9 +176,9 @@ Example for Finance Analyst:
 
 | Access Type | Group |
 |---|---|
-| Department group | GG_FIN_All |
-| Role group | GG_FIN_Analysts |
-| File share read/write | DL_FS_Finance_RW |
+| Department group | GG_DEPT_FINANCE_All |
+| Role group | GG_DEPT_FINANCE_ASSOCIATE |
+| File share read/write | DL_FS_Finance_READ |
 | Finance app access | APP_FinanceSystem_Users |
 | M365 standard licence | LIC_M365_E3 |
 
@@ -257,12 +257,12 @@ Validation checks:
 | Name | Amina Yusuf |
 | Department | Finance |
 | Job Title | Finance Analyst |
-| Manager | Sarah Johnson |
+| Manager | Emma Watson |
 | Office | Milton Keynes |
 | Contract Type | Permanent |
 | Start Date | 2026-07-01 |
 | Username | ayusuf |
-| UPN | ayusuf@iamhomelab.com |
+| UPN | amina.yusuf@ogkareemu.live |
 
 Expected access:
 
@@ -296,7 +296,7 @@ Expected access:
 - AD group membership
 - Entra ID user profile
 - Licence assignment
-- MFA/Conditional Access scope where possible
+- MFA/Conditional Access scope, where possible
 - Completion note confirming account is ready
 
 ---
