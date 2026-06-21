@@ -240,11 +240,11 @@ Validation checks:
 
 | Field | Value |
 |---|---|
-| Name | Amina Yusuf |
-| Username | amina.yusuf |
+| Name | Ryan Gray |
+| Username | rgray |
 | Previous Department | Finance |
 | New Department | IT |
-| Previous Role | Finance Analyst |
+| Previous Role | Finance Assistant |
 | New Role | IAM Analyst |
 
 ### Access Removed
@@ -293,6 +293,35 @@ Example:
 
 ---
 
+## Movers Screenshot
+**HR Record**
+
+<img width="1270" height="149" alt="Screenshot 2026-06-21 at 19 49 24" src="https://github.com/user-attachments/assets/600b0a27-7e19-4a00-8db3-f6cbfbb24939" />
+
+**Current Role and Access**
+
+<img width="487" height="609" alt="Screenshot 2026-06-21 at 19 44 35" src="https://github.com/user-attachments/assets/87b9a8fa-c2ac-4c82-b455-d871a9f84255" />
+<img width="495" height="606" alt="Screenshot 2026-06-21 at 19 44 24" src="https://github.com/user-attachments/assets/8ee27404-ff62-4d36-8db2-feb938600317" />
+<img width="498" height="686" alt="Screenshot 2026-06-21 at 19 42 28" src="https://github.com/user-attachments/assets/0dc23fb9-4736-4118-bb8a-b43224b20a0f" />
+<img width="484" height="248" alt="Screenshot 2026-06-21 at 19 52 48" src="https://github.com/user-attachments/assets/64ea1397-8618-43ac-ab49-de04f7b328a5" />
+
+
+**New Role and Access**
+
+<img width="499" height="601" alt="Screenshot 2026-06-21 at 19 55 57" src="https://github.com/user-attachments/assets/ebfc944d-a934-46f2-b26d-2bc899da4584" />
+<img width="486" height="576" alt="Screenshot 2026-06-21 at 19 55 15" src="https://github.com/user-attachments/assets/1eda7e6d-918d-4e18-9d09-24b733ba20a1" />
+<img width="495" height="332" alt="Screenshot 2026-06-21 at 19 54 41" src="https://github.com/user-attachments/assets/39ed52e1-faf4-49be-a4b1-fef4125376ba" />
+<img width="486" height="511" alt="Screenshot 2026-06-21 at 19 53 47" src="https://github.com/user-attachments/assets/a4167e80-544e-4263-bdbd-d8d97c1364ff" />
+
+## Mover Lifecycle Workflow
+
+<img width="951" height="498" alt="Screenshot 2026-06-21 at 20 03 05" src="https://github.com/user-attachments/assets/8d4a52be-5156-4bc5-b8f3-d6a5403712ff" />
+
+<img width="929" height="403" alt="Screenshot 2026-06-21 at 19 58 43" src="https://github.com/user-attachments/assets/dab49b1f-7a59-4d8e-8c26-eea6e36a5e36" />
+
+<img width="835" height="650" alt="Screenshot 2026-06-21 at 20 03 31" src="https://github.com/user-attachments/assets/46da90f6-f6ad-447f-ab36-5c5a7c24ae00" />
+
+
 ## Common Mover Issues and Fixes
 
 | Issue | Likely Cause | Fix |
@@ -305,7 +334,7 @@ Example:
 
 ---
 
-##Screenshots
+## Evidence to Capture
 
 - HR change record or ticket reference
 - Before group membership
