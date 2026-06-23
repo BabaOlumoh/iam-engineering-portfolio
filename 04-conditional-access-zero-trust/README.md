@@ -4,7 +4,7 @@
 
 This project demonstrates how to design, implement, test, and document a Microsoft Entra Conditional Access policy that enforces multifactor authentication (MFA) for all users while protecting the tenant from accidental lockout.
 
-The goal is not only to enable MFA, but to show an enterprise-ready Zero Trust approach where identity, risk, authentication strength, emergency access, monitoring, and rollout control are considered before enforcement.
+The goal of this project is to enable MFA and show an enterprise-ready Zero Trust approach where identity, risk, authentication strength, emergency access, monitoring, and rollout control are considered before enforcement.
 
 ## Business Problem
 
@@ -123,11 +123,8 @@ Report-only mode allows the impact of the policy to be assessed before users are
 
 Privileged users should have stronger requirements than standard users because their accounts can modify tenant-wide security settings.
 
-## Evidence to Capture
 
-Store screenshots in the `screenshots/` folder.
-
-Recommended screenshots:
+Screenshots:
 
 - Conditional Access policy list.
 - CA-001 policy assignments.
@@ -139,9 +136,9 @@ Recommended screenshots:
 - Admin MFA policy evidence.
 - Legacy authentication block evidence.
 
-## Interview Talking Points
+## Project Use
 
-Use this project to explain:
+This project can be used to explain:
 
 - Why MFA should be enforced through Conditional Access.
 - Why break-glass accounts must be treated differently from standard users.
