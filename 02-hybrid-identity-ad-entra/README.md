@@ -12,13 +12,13 @@ The aim of this project is to demonstrate practical hybrid IAM knowledge across 
 
 Many organisations still operate in a hybrid identity model where users are created and managed in on-premises Active Directory, then synchronized to Microsoft Entra ID for Microsoft 365, SaaS access, Conditional Access, MFA, and governance controls.
 
-This project shows that I understand:
+This project highlights my understanding of:
 
 - How on-premises AD and Microsoft Entra ID work together.
 - Why the on-premises directory is commonly treated as the source of authority in hybrid environments.
 - How custom domain and UPN alignment affects sign-in experience.
-- How Microsoft Entra Connect Sync synchronizes users, groups, and selected attributes.
-- How Lifecycle Workflows can be extended to synchronized AD users using an on-premises provisioning agent.
+- How Microsoft Entra Connect Sync synchronises users, groups, and selected attributes.
+- How Lifecycle Workflows can be extended to synchronise AD users using an on-premises provisioning agent.
 - How to troubleshoot common sync and provisioning issues.
 
 ---
@@ -32,8 +32,8 @@ The objectives of this lab were to:
 3. Add the custom domain as a UPN suffix in Active Directory.
 4. Create test users in AD with cloud-ready UPNs.
 5. Install and configure Microsoft Entra Connect Sync.
-6. Synchronize selected users and groups to Microsoft Entra ID.
-7. Validate that users appear correctly in Entra ID as synchronized identities.
+6. Synchronise selected users and groups to Microsoft Entra ID.
+7. Validate that users appear correctly in Entra ID as synchronised identities.
 8. Install the Microsoft Entra provisioning agent for on-premises lifecycle operations.
 9. Configure Lifecycle Workflows for joiner, mover, or leaver use cases where applicable.
 10. Document troubleshooting steps and operational checks.
@@ -64,11 +64,11 @@ flowchart LR
 | Active Directory Domain Services | Primary on-premises identity store |
 | Custom domain `0gkareemu.live` | Cloud-ready sign-in domain for Entra users |
 | AD UPN suffix | Allows AD users to sign in with the same UPN as Entra ID |
-| Microsoft Entra Connect Sync | Synchronizes AD identities into Microsoft Entra ID |
+| Microsoft Entra Connect Sync | Synchronises AD identities into Microsoft Entra ID |
 | Microsoft Entra ID | Cloud identity platform for Microsoft 365 and governance |
 | Microsoft Entra provisioning agent | Enables cloud-managed provisioning actions into on-premises systems |
 | Lifecycle Workflows | Automates joiner, mover, and leaver identity tasks |
-| Conditional Access | Applies Zero Trust access controls after identities are synchronized |
+| Conditional Access | Applies Zero Trust access controls after identities are synchronised |
 
 ---
 
@@ -79,10 +79,6 @@ flowchart LR
 ├── README.md
 ├── architecture.md
 ├── entra-connect-sync.md
-├── troubleshooting.md
-└── screenshots/
-    ├── README.md
-    └── .gitkeep
 ```
 
 ---
