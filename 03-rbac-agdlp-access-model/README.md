@@ -14,7 +14,7 @@ The goal of this project is to show how user access can be assigned in a control
 - Least privilege principles
 - Joiner, Mover and Leaver alignment
 
-This project is designed as a portfolio-ready IAM artefact for demonstrating how access can be structured in a real organisation instead of assigning permissions directly to individual users.
+This project is designed as a portfolio-ready IAM artefact to demonstrate how access can be structured within a real organisation, rather than assigning permissions directly to individual users.
 
 ---
 
@@ -102,9 +102,6 @@ This avoids assigning permissions directly to users and makes access easier to m
 ├── rbac-role-matrix.md
 ├── group-naming-standard.md
 ├── access-request-flow.md
-└── screenshots/
-    ├── README.md
-    └── .gitkeep
 ```
 
 ---
@@ -114,7 +111,7 @@ This avoids assigning permissions directly to users and makes access easier to m
 | Component | Example |
 |---|---|
 | AD domain | ad.iamhomelab.com |
-| Verified Entra domain | 0gkareemu.live |
+| Verified Entra domain | ogkareemu.live |
 | Identity source | On-premises AD |
 | Cloud directory | Microsoft Entra ID |
 | Sync method | Entra Connect Sync |
@@ -252,13 +249,10 @@ When a user leaves:
 | `rbac-role-matrix.md` | Maps departments and job roles to approved access groups |
 | `group-naming-standard.md` | Defines a consistent naming convention for AD and Entra groups |
 | `access-request-flow.md` | Documents how access is requested, approved, fulfilled and reviewed |
-| `screenshots/` | Placeholder for lab screenshots and evidence |
 
 ---
 
-## Suggested Screenshots to Add
-
-Add screenshots showing:
+## Evidence captured:
 
 - AD OU structure
 - Example AD security groups
@@ -266,37 +260,7 @@ Add screenshots showing:
 - Example user group membership
 - Entra ID synced user
 - Entra ID synced group
-- Access request ticket example
-- File share permission showing Domain Local group assignment
 - Before and after mover access comparison
 - Leaver group membership removal evidence
 
 ---
-
-## Interview Talking Points
-
-This project can be explained in interviews as:
-
-> I designed a hybrid RBAC access model using the AGDLP principle. Instead of assigning permissions directly to users, I mapped job roles to global groups, nested those groups into resource-based permission groups, and applied permissions only to the resource groups. This makes access easier to audit, request, approve, remove and automate during Joiner, Mover and Leaver processes.
-
-Strong points to mention:
-
-- You understand access control design, not just user administration.
-- You know why direct user permissions are risky.
-- You can design access around business roles.
-- You understand privilege creep during mover processes.
-- You can support audit, compliance and Service Desk operations.
-- You can align RBAC with JML lifecycle management.
-
----
-
-## Status
-
-This is a portfolio lab project. It can be extended with:
-
-- PowerShell group creation scripts
-- CSV-based access matrix import
-- Entra dynamic group design
-- Access review evidence
-- Entitlement Management access packages
-- PIM role activation workflow
