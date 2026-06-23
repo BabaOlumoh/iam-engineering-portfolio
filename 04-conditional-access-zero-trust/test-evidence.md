@@ -286,17 +286,3 @@ For each test, review the following fields in Microsoft Entra sign-in logs:
 | Break-glass usage monitored | Alert generated on sign-in | Pending |
 | Legacy auth blocked | Legacy auth attempt denied after enforcement | Pending |
 | Evidence documented | Screenshots saved with clear names | Pending |
-
-## Lessons Learned
-
-Use this section after completing the lab.
-
-```text
-What worked well:
-
-What failed or needed adjustment:
-
-What I would improve in a production rollout:
-
-How this improves the organisation's identity security posture:
-```
