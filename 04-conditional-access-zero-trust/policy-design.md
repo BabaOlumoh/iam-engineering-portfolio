@@ -89,7 +89,7 @@ Require MFA for all standard workforce users accessing Microsoft cloud resources
 
 ### Objective
 
-Require stronger authentication for privileged users because administrator accounts have tenant-wide impact.
+Require stronger authentication for privileged users because administrator accounts have a tenant-wide impact.
 
 ### Policy Configuration
 
