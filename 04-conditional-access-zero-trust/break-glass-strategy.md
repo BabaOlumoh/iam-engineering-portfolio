@@ -32,7 +32,6 @@ Break-glass accounts provide a controlled emergency path to recover access.
 | bg-admin-01@tenant.onmicrosoft.com | Primary emergency access account |
 | bg-admin-02@tenant.onmicrosoft.com | Secondary emergency access account |
 
-Do not name accounts obviously in production environments if that increases attack risk. Use an internal naming standard approved by the security team.
 
 ## Key Design Decisions
 
@@ -98,7 +97,7 @@ THEN send high-priority alert to IAM/security administrators
 ## Emergency Access Procedure
 
 1. Confirm normal administrator access is unavailable.
-2. Obtain approval from authorised incident lead where possible.
+2. Obtain approval from the authorised incident lead where possible.
 3. Retrieve emergency access credential using approved secure process.
 4. Sign in using the emergency access account.
 5. Resolve the issue causing lockout or outage.
@@ -128,9 +127,7 @@ THEN send high-priority alert to IAM/security administrators
 - Keep accounts separate from normal privileged identity workflows.
 - Test regularly but minimally.
 
-## Evidence to Capture
-
-Place screenshots in the `screenshots/` folder:
+## Evidence to be Captured
 
 - Break-glass account list with sensitive details redacted.
 - Conditional Access exclusion showing break-glass accounts excluded.
@@ -138,9 +135,3 @@ Place screenshots in the `screenshots/` folder:
 - Alert triggered by emergency account sign-in.
 - Role assignment evidence.
 - Review checklist evidence.
-
-## Interview Explanation
-
-A strong answer in an interview:
-
-> I would never enforce MFA or Conditional Access to all users without a break-glass strategy. I would create at least two cloud-only emergency access accounts, exclude them from normal restrictive CA policies, protect them with strong authentication and secure credential storage, and alert on every sign-in. I would also test them regularly so the organisation knows emergency access will work when needed.
