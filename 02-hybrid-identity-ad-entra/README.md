@@ -2,15 +2,15 @@
 
 ## Project Summary
 
-This project documents a hybrid identity lab that connects an on-premises Active Directory Domain Services environment to Microsoft Entra ID using Microsoft Entra Connect Sync. The lab also includes a verified custom domain, `ogkareemu.live`, and the Microsoft Entra provisioning agent to support Lifecycle Workflows actions against synchronized on-premises users.
+This project documents a hybrid identity lab that connects an on-premises Active Directory Domain Services environment to Microsoft Entra ID using Microsoft Entra Connect Sync. The lab also includes a verified custom domain, `ogkareemu.live`, and the Microsoft Entra provisioning agent to support Lifecycle Workflows actions against synchronised on-premises users.
 
-The aim of this project is to demonstrate practical hybrid IAM knowledge across directory synchronization, custom domain planning, source-of-truth design, identity lifecycle operations, and troubleshooting.
+The aim of this project is to demonstrate practical hybrid IAM knowledge across directory synchronisation, custom domain planning, source-of-truth design, identity lifecycle operations, and troubleshooting.
 
 ---
 
 ## Why This Project Matters
 
-Many organisations still operate in a hybrid identity model where users are created and managed in on-premises Active Directory, then synchronized to Microsoft Entra ID for Microsoft 365, SaaS access, Conditional Access, MFA, and governance controls.
+Many organisations still operate in a hybrid identity model where users are created and managed in on-premises Active Directory, then synchronised to Microsoft Entra ID for Microsoft 365, SaaS access, Conditional Access, MFA, and governance controls.
 
 This project highlights my understanding of:
 
