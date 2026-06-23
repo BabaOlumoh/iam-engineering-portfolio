@@ -50,9 +50,6 @@ Design a Conditional Access baseline that:
 ├── policy-design.md
 ├── break-glass-strategy.md
 ├── test-evidence.md
-└── screenshots/
-    ├── README.md
-    └── .gitkeep
 ```
 
 ## Conditional Access Policies Designed
