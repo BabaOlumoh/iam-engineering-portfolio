@@ -18,7 +18,7 @@ The goal of this portfolio is to demonstrate practical IAM skills, including:
 | Project | Skills Demonstrated |
 |---|---|
 | [Identity Lifecycle Management](https://github.com/BabaOlumoh/iam-engineering-portfolio/tree/de586295fff145ff624215f883363aaebb22bcd5/01-identity-lifecycle-jml) | Joiner, mover, leaver, source of truth, automation |
-| Hybrid AD + Entra ID | Entra Connect, AD groups, sync, hybrid identity |
+| [Hybrid AD + Entra ID](https://github.com/BabaOlumoh/iam-engineering-portfolio/tree/5f06a356fd3a06a182410ab4b9c25a7e085ff434/02-hybrid-identity-ad-entra) | Entra Connect, AD groups, sync, hybrid identity |
 | RBAC AGDLP Model | Role-based access, group nesting, least privilege |
 | [Conditional Access Lab](https://github.com/BabaOlumoh/iam-engineering-portfolio/tree/dcb2b91d7f31ceae719808cc93f16fe1c7a7ea33/04-conditional-access-zero-trust) | MFA, device compliance, risk-based access |
 | PIM Lab | Just-in-time admin access, approval, auditing |
