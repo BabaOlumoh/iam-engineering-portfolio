@@ -10,35 +10,20 @@ The evidence should show that MFA is enforced for standard users, stronger contr
 
 | Test User | Role | Purpose |
 |---|---|---|
-| standard.user@tenant.com | Standard user | Confirm MFA is required for normal access |
-| admin.user@tenant.com | Privileged user | Confirm stronger admin policy applies |
-| bg-admin-01@tenant.onmicrosoft.com | Break-glass account | Confirm exclusion and emergency access path |
-| service.sync@tenant.com | Service/sync account example | Confirm service accounts are reviewed before enforcement |
+| adam.cole@ogkareemu.live | Standard user | Confirm MFA is required for normal access |
+| admin@ogkareemu.live | Privileged user | Confirm stronger admin policy applies |
+| breakglass@ogkareemu.live | Break-glass account | Confirm exclusion and emergency access path |
+
 
 ## Test Scope
 
 | Policy | Test Status | Evidence Required |
 |---|---|---|
-| CA-001 - Require MFA - All Users | Pending / Passed / Failed | Policy config and sign-in logs |
-| CA-002 - Require Strong MFA - Admin Roles | Pending / Passed / Failed | Admin sign-in and policy result |
-| CA-003 - Block Legacy Authentication | Pending / Passed / Failed | Legacy auth sign-in blocked or report-only result |
-| CA-004 - Require MFA - Security Info Registration | Pending / Passed / Failed | Security info registration prompt evidence |
+| CA-001 - Require MFA - All Users | Passed | Policy config and sign-in logs |
+| CA-002 - Require Strong MFA - Admin Roles | Passed | Admin sign-in and policy result |
+| CA-003 - Block Legacy Authentication | Passed | Legacy auth sign-in blocked or report-only result |
+| CA-004 - Require MFA - Security Info Registration | Passed | Security info registration prompt evidence |
 
-## Evidence Naming Standard
-
-Use clear screenshot names so the evidence is easy to review.
-
-```text
-screenshots/ca-001-policy-overview.png
-screenshots/ca-001-users-included-exclusions.png
-screenshots/ca-001-grant-controls-mfa.png
-screenshots/ca-001-report-only-result-standard-user.png
-screenshots/ca-001-enabled-on.png
-screenshots/ca-002-admin-strong-mfa-result.png
-screenshots/ca-003-legacy-auth-blocked.png
-screenshots/break-glass-exclusion.png
-screenshots/break-glass-signin-alert.png
-```
 
 ## Test Case 1 - Standard User Requires MFA
 
@@ -56,7 +41,7 @@ Confirm that a standard user must complete MFA when accessing Microsoft 365 reso
 
 ### Steps
 
-1. Sign in as `standard.user@tenant.com`.
+1. Sign in as `adam.cole@ogkareemu.live`.
 2. Access Microsoft 365 or another target cloud app.
 3. Observe MFA prompt or report-only result.
 4. Complete MFA.
@@ -71,16 +56,13 @@ The user is required to complete MFA before access is granted.
 
 | Evidence | Screenshot |
 |---|---|
-| Policy assignment includes user | `screenshots/ca-001-users-included-exclusions.png` |
-| Grant control requires MFA | `screenshots/ca-001-grant-controls-mfa.png` |
-| Sign-in log shows policy applied | `screenshots/ca-001-report-only-result-standard-user.png` |
+| Policy assignment includes user |
+<img width="872" height="694" alt="Screenshot 2026-06-27 at 23 30 05" src="https://github.com/user-attachments/assets/053e66b8-3d55-4e37-aa6e-53745308b1e7" />
+<img width="949" height="215" alt="Screenshot 2026-06-27 at 23 06 00" src="https://github.com/user-attachments/assets/cd285eb6-3bf3-4d6b-9e57-65e6a87dbccd" />
 
-### Actual Result
+| Grant control requires MFA |
+<img width="970" height="348" alt="Screenshot 2026-06-27 at 23 30 43" src="https://github.com/user-attachments/assets/298cc093-1fb3-4858-acb6-a5e43a2af444" />
 
-```text
-Result: Pending
-Notes:
-```
 
 ## Test Case 2 - User Fails or Cancels MFA
 
@@ -90,7 +72,7 @@ Confirm that access is not granted when MFA is not completed.
 
 ### Steps
 
-1. Sign in as `standard.user@tenant.com`.
+1. Sign in as `adam.cole@ogkareemu.live`.
 2. Trigger access to Microsoft 365.
 3. Cancel or fail the MFA challenge.
 4. Review sign-in logs.
@@ -101,16 +83,8 @@ Access is interrupted or blocked because MFA was not satisfied.
 
 ### Evidence
 
-```text
-screenshots/ca-001-mfa-failed-signin.png
-```
+<img width="548" height="627" alt="Screenshot 2026-06-27 at 23 19 16" src="https://github.com/user-attachments/assets/014c9174-375b-4002-9dd9-04f6bbfcc7d0" />
 
-### Actual Result
-
-```text
-Result: Pending
-Notes:
-```
 
 ## Test Case 3 - Break-Glass Account Is Excluded
 
@@ -141,16 +115,14 @@ The break-glass account is not blocked by CA-001, and its sign-in activity is lo
 
 | Evidence | Screenshot |
 |---|---|
-| Break-glass account excluded | `screenshots/break-glass-exclusion.png` |
-| Sign-in successful | `screenshots/break-glass-signin-test.png` |
-| Alert generated | `screenshots/break-glass-signin-alert.png` |
+| Break-glass account excluded 
+<img width="830" height="693" alt="Screenshot 2026-06-27 at 23 36 12" src="https://github.com/user-attachments/assets/2adcf77e-402c-42ff-bbe1-f120edd37452" />
 
-### Actual Result
+| Sign-in successful 
+<img width="744" height="491" alt="Screenshot 2026-06-27 at 23 35 00" src="https://github.com/user-attachments/assets/705b22dd-dac6-4418-bca7-717edf146e1d" />
 
-```text
-Result: Pending
-Notes:
-```
+| Alert generated
+
 
 ## Test Case 4 - Admin Requires Stronger MFA
 
@@ -166,10 +138,10 @@ Confirm that privileged users must satisfy a stronger authentication requirement
 
 ### Steps
 
-1. Sign in as `admin.user@tenant.com`.
+1. Sign in as `admin@ogkareemu.live`.
 2. Access Microsoft Entra admin center or Microsoft Admin Portal.
-3. Observe authentication requirement.
-4. Complete approved strong MFA method.
+3. Observe the authentication requirement.
+4. Complete the approved strong MFA method.
 5. Review sign-in logs.
 
 ### Expected Result
@@ -178,16 +150,10 @@ The admin user must complete strong MFA before accessing admin resources.
 
 ### Evidence
 
-```text
-screenshots/ca-002-admin-strong-mfa-result.png
-```
+<img width="996" height="613" alt="Screenshot 2026-06-27 at 23 55 46" src="https://github.com/user-attachments/assets/b12f718c-5cfa-44a6-b435-827c07661b5c" />
+<img width="463" height="413" alt="Screenshot 2026-06-28 at 00 03 07" src="https://github.com/user-attachments/assets/daa6e09f-055e-4276-95a4-42fa03e3f299" />
 
-### Actual Result
 
-```text
-Result: Pending
-Notes:
-```
 
 ## Test Case 5 - Legacy Authentication Blocked
 
@@ -214,17 +180,8 @@ Legacy authentication attempts are blocked after enforcement.
 
 ### Evidence
 
-```text
-screenshots/ca-003-legacy-auth-report-only.png
-screenshots/ca-003-legacy-auth-blocked.png
-```
+<img width="977" height="708" alt="Screenshot 2026-06-27 at 23 56 51" src="https://github.com/user-attachments/assets/8e61420c-1b04-4dac-b082-4718f6669474" />
 
-### Actual Result
-
-```text
-Result: Pending
-Notes:
-```
 
 ## Test Case 6 - Security Info Registration Requires MFA
 
@@ -250,17 +207,13 @@ Confirm that users must complete MFA when registering or changing security infor
 The user must complete MFA before registering or changing security information.
 
 ### Evidence
+<img width="981" height="674" alt="Screenshot 2026-06-27 at 23 58 34" src="https://github.com/user-attachments/assets/9029119c-2b6c-4c49-abc2-99fb295d90df" />
+<img width="1200" height="391" alt="Screenshot 2026-06-28 at 00 00 49" src="https://github.com/user-attachments/assets/1c06543c-6345-4b02-abbe-876cb7b9feb8" />
+<img width="698" height="680" alt="Screenshot 2026-06-28 at 00 01 33" src="https://github.com/user-attachments/assets/2915dd61-cfa5-4a5d-b50d-6576626e91a0" />
 
-```text
-screenshots/ca-004-security-info-registration-mfa.png
-```
 
-### Actual Result
 
-```text
-Result: Pending
-Notes:
-```
+
 
 ## Sign-In Log Review Checklist
 
@@ -280,9 +233,8 @@ For each test, review the following fields in Microsoft Entra sign-in logs:
 
 | Control | Pass Criteria | Result |
 |---|---|---|
-| MFA enforced for all standard users | Standard user is prompted for MFA | Pending |
-| Admins require stronger authentication | Admin user must satisfy stronger control | Pending |
-| Break-glass account excluded | Emergency account can sign in during approved test | Pending |
-| Break-glass usage monitored | Alert generated on sign-in | Pending |
-| Legacy auth blocked | Legacy auth attempt denied after enforcement | Pending |
-| Evidence documented | Screenshots saved with clear names | Pending |
+| MFA enforced for all standard users | Standard user is prompted for MFA | Passed |
+| Admins require stronger authentication | Admin user must satisfy stronger control | Passed |
+| Break-glass account excluded | Emergency account can sign in during approved test | Passed |
+| Break-glass usage monitored | Alert generated on sign-in | Passed |
+| Legacy auth blocked | Legacy auth attempt denied after enforcement | Passed |
