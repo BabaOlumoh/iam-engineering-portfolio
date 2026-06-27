@@ -79,8 +79,8 @@ Break-glass accounts should have alerting configured for:
 ## Example Alert Logic
 
 ```text
-IF userPrincipalName equals bg-admin-01@tenant.onmicrosoft.com
-OR userPrincipalName equals bg-admin-02@tenant.onmicrosoft.com
+IF userPrincipalName equals breakglass@ogkareemu.live
+OR userPrincipalName equals breakglass2@ogkareemu.live
 THEN send high-priority alert to IAM/security administrators
 ```
 
