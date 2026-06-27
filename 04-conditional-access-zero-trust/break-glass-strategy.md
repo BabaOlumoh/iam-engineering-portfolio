@@ -29,8 +29,8 @@ Break-glass accounts provide a controlled emergency path to recover access.
 
 | Account | Purpose |
 |---|---|
-| bg-admin-01@tenant.onmicrosoft.com | Primary emergency access account |
-| bg-admin-02@tenant.onmicrosoft.com | Secondary emergency access account |
+| breakglass@ogkareemu.live | Primary emergency access account |
+| breakglass2@ogkareemu.live | Secondary emergency access account |
 
 
 ## Key Design Decisions
