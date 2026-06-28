@@ -50,9 +50,7 @@ This project demonstrates the following IAM skills:
 | Least privilege | Users receive only role-required access |
 | Access governance | Access requests require approval and business justification |
 | Hybrid identity | AD groups support on-prem resources and synced access patterns |
-| Service Desk readiness | Clear request, fulfilment and evidence process |
-| Auditability | Access can be reviewed using group membership and approval records |
-
+| Auditability | Access can be reviewed using group membership |
 ---
 
 ## AGDLP Model Used
