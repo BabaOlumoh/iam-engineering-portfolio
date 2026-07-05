@@ -83,7 +83,7 @@ Access is interrupted or blocked because MFA was not satisfied.
 
 ### Evidence
 
- <img width="826" height="660" alt="Screenshot 2026-06-28 at 16 03 44" src="https://github.com/user-attachments/assets/49aee423-e043-4602-b279-68959a1fd9a9" />
+<img width="585" height="508" alt="Screenshot 2026-07-05 at 09 38 53" src="https://github.com/user-attachments/assets/ac181b69-1ce0-44ae-bdfd-940b83b759db" />
 
 
 
