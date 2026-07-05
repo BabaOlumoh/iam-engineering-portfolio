@@ -22,4 +22,3 @@ The goal of this portfolio is to demonstrate practical IAM skills, including:
 | [RBAC AGDLP Model](https://github.com/BabaOlumoh/iam-engineering-portfolio/tree/e3d4680cc8218cfa63396c5153c459f06424a632/03-rbac-agdlp-access-model) | Role-based access, group nesting, least privilege |
 | [Conditional Access Lab](https://github.com/BabaOlumoh/iam-engineering-portfolio/tree/dcb2b91d7f31ceae719808cc93f16fe1c7a7ea33/04-conditional-access-zero-trust) | MFA, device compliance, risk-based access |
 | [PIM Lab](https://github.com/BabaOlumoh/iam-engineering-portfolio/tree/523a6e29d4756f7dc90f57e90ee16c3f51053d52/05-privileged-access-pim) | Just-in-time admin access, approval, auditing |
-| Entitlement Management | Access packages, temporary access, approval workflow |
