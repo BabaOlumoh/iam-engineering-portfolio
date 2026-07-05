@@ -7,7 +7,7 @@ This document describes how Microsoft Entra Connect Sync was configured in the h
 The configuration supports:
 
 - Hybrid identity for Microsoft 365 access.
-- Custom domain sign-in using `0gkareemu.live`.
+- Custom domain sign-in using `ogkareemu.live`.
 - Scoped synchronization of lab users and groups.
 - Cloud governance through Microsoft Entra ID.
 - Lifecycle Workflow processing for synchronized users.
@@ -21,7 +21,7 @@ Before configuring Entra Connect Sync, the following prerequisites should be com
 ### Microsoft Entra prerequisites
 
 - Microsoft Entra tenant available.
-- Custom domain `0gkareemu.live` added and verified.
+- Custom domain `ogkareemu.live` added and verified.
 - Hybrid Identity Administrator or Global Administrator access available for setup.
 - Test users and groups planned.
 - Licensing available for Entra ID Governance features if Lifecycle Workflows are being tested.
@@ -30,9 +30,9 @@ Before configuring Entra Connect Sync, the following prerequisites should be com
 
 - Domain controller online and healthy.
 - DNS resolution working correctly.
-- AD UPN suffix `0gkareemu.live` added.
+- AD UPN suffix `ogkareemu.live` added.
 - Test users created in scoped OUs.
-- User UPNs set to `@0gkareemu.live`.
+- User UPNs set to `@ogkareemu.live`.
 - Duplicate UPNs and duplicate email/proxy values checked.
 
 ### Server prerequisites
@@ -41,7 +41,7 @@ Before configuring Entra Connect Sync, the following prerequisites should be com
 - Network connectivity to the domain controller.
 - Outbound internet connectivity to Microsoft Entra services.
 - Admin account available for installation.
-- Time synchronization working.
+- Time synchronisation working.
 - TLS inspection/proxy issues reviewed if present.
 
 ---
@@ -53,7 +53,7 @@ The custom domain must be added to the Microsoft Entra tenant before users can s
 Domain used:
 
 ```text
-0gkareemu.live
+ogkareemu.live
 ```
 
 Expected result:
@@ -65,7 +65,7 @@ Domain status: Verified
 Evidence to capture:
 
 - Screenshot of domain list in Microsoft Entra admin center.
-- Screenshot showing `0gkareemu.live` as verified.
+- Screenshot showing `ogkareemu.live` as verified.
 
 ---
 
@@ -81,7 +81,7 @@ The custom domain should be added as an alternative UPN suffix in Active Directo
 4. Add the UPN suffix:
 
 ```text
-0gkareemu.live
+ogkareemu.live
 ```
 
 5. Apply the change.
@@ -95,7 +95,7 @@ Get-ADForest | Select-Object -ExpandProperty UPNSuffixes
 Expected output includes:
 
 ```text
-0gkareemu.live
+ogkareemu.live
 ```
 
 ---
@@ -114,8 +114,8 @@ Expected values:
 | Attribute | Example |
 |---|---|
 | `Name` | John Smith |
-| `UserPrincipalName` | `john.smith@0gkareemu.live` |
-| `mail` | `john.smith@0gkareemu.live` |
+| `UserPrincipalName` | `john.smith@ogkareemu.live` |
+| `mail` | `john.smith@ogkareemu.live` |
 | `department` | IT |
 | `title` | Service Desk Analyst |
 | `manager` | Populated where applicable |
@@ -226,7 +226,7 @@ In Microsoft Entra ID, synced users should show:
 
 | Field | Expected Result |
 |---|---|
-| User principal name | `user@0gkareemu.live` |
+| User principal name | `user@ogkareemu.live` |
 | On-premises sync enabled | Yes |
 | Source | Windows Server AD / Synced from on-premises |
 | Account enabled | Matches on-prem AD state after sync |
@@ -241,7 +241,7 @@ In Microsoft Entra ID, synced users should show:
 ### Test case: New AD user appears in Microsoft Entra ID
 
 1. Create user in AD under scoped OU.
-2. Set UPN to `@0gkareemu.live`.
+2. Set UPN to `@ogkareemu.live`.
 3. Populate department and job title.
 4. Add user to required AD groups.
 5. Run delta sync.
@@ -277,7 +277,7 @@ Example groups:
 
 ## Lifecycle Workflow Integration
 
-Lifecycle Workflows can process users synchronized from AD when the required attributes and scope conditions are met.
+Lifecycle Workflows can process users synchronised from AD when the required attributes and scope conditions are met.
 
 For cloud-only tasks, the workflow acts directly in Microsoft Entra ID.
 
@@ -300,7 +300,7 @@ flowchart LR
 
 ## Provisioning Agent Notes
 
-The provisioning agent provides connectivity between Microsoft Entra ID and the on-premises environment. In this lab, it is included to support lifecycle operations for synchronized users.
+The provisioning agent provides connectivity between Microsoft Entra ID and the on-premises environment. In this lab, it is included to support lifecycle operations for synchronised users.
 
 Recommended checks:
 
@@ -308,7 +308,7 @@ Recommended checks:
 - Agent visible and healthy in Microsoft Entra admin center.
 - Server has connectivity to domain controller.
 - Service account permissions are correct.
-- Lifecycle Workflow task is configured for synchronized users where applicable.
+- Lifecycle Workflow task is configured for synchronised users where applicable.
 
 ---
 
@@ -334,9 +334,9 @@ The Entra Connect Sync configuration is successful when:
 
 - The custom domain is verified.
 - AD users use the verified domain as their UPN suffix.
-- Scoped AD users synchronize to Microsoft Entra ID.
+- Scoped AD users synchronise to Microsoft Entra ID.
 - Users appear as synced, not cloud-only.
-- Group memberships synchronize correctly.
+- Group memberships synchronise correctly.
 - Changes made in AD flow to Entra ID after delta sync.
-- Lifecycle Workflow tests can identify synchronized users.
+- Lifecycle Workflow tests can identify synchronised users.
 - Supported on-premises account actions work through the provisioning agent.
