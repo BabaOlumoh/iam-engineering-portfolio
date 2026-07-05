@@ -18,35 +18,16 @@ The goal is to prove that privileged access is:
 
 | Evidence ID | Evidence Item | Expected Screenshot / Output | Status |
 |---|---|---|---|
-| PIM-EV-001 | PIM Microsoft Entra roles page | Shows available roles in PIM | Pending |
-| PIM-EV-002 | Eligible role assignment | Shows lab admin account as eligible for role | Pending |
-| PIM-EV-003 | Role settings | Shows MFA, justification, duration, and approval settings | Pending |
-| PIM-EV-004 | Activation request | Shows user requesting role activation | Pending |
-| PIM-EV-005 | MFA challenge | Shows MFA required before activation | Pending |
-| PIM-EV-006 | Approval request | Shows approver receiving pending request | Pending |
-| PIM-EV-007 | Approved activation | Shows role successfully activated | Pending |
-| PIM-EV-008 | Active role view | Shows user currently active in role | Pending |
-| PIM-EV-009 | Expired/deactivated role | Shows role no longer active after duration | Pending |
-| PIM-EV-010 | PIM audit history | Shows activation, approval, and deactivation events | Pending |
-
----
-
-## Screenshot Naming Standard
-
-Use a consistent naming format:
-
-```text
-screenshots/01-pim-entra-roles-page.png
-screenshots/02-eligible-role-assignment.png
-screenshots/03-role-settings-mfa-approval.png
-screenshots/04-activation-request.png
-screenshots/05-approval-request.png
-screenshots/06-approved-activation.png
-screenshots/07-active-role-confirmation.png
-screenshots/08-role-expired.png
-screenshots/09-pim-audit-history.png
-screenshots/10-entra-audit-log.png
-```
+| PIM-EV-001 | PIM Microsoft Entra roles page | Shows available roles in PIM | Success |
+| PIM-EV-002 | Eligible role assignment | Shows lab admin account as eligible for role | Success |
+| PIM-EV-003 | Role settings | Shows MFA, justification, duration, and approval settings | Success |
+| PIM-EV-004 | Activation request | Shows user requesting role activation | Success |
+| PIM-EV-005 | MFA challenge | Shows MFA required before activation | Success |
+| PIM-EV-006 | Approval request | Shows approver receiving pending request | Success |
+| PIM-EV-007 | Approved activation | Shows role successfully activated | Success |
+| PIM-EV-008 | Active role view | Shows user currently active in role | Success |
+| PIM-EV-009 | Expired/deactivated role | Shows role no longer active after duration | Success |
+| PIM-EV-010 | PIM audit history | Shows activation, approval, and deactivation events | Success |
 
 ---
 
@@ -60,7 +41,7 @@ Confirm that a lab admin account is assigned a privileged role as eligible rathe
 
 | Field | Value |
 |---|---|
-| User | `adm.servicedesk@0gkareemu.live` |
+| User | `admin@ogkareemu.live` |
 | Role | Authentication Administrator |
 | Assignment Type | Eligible |
 | Duration | Permanent eligible or time-bound eligible depending on lab design |
@@ -82,11 +63,7 @@ The user appears as eligible for the role but does not have active privileges un
 
 ### Evidence
 
-Capture:
-
-```text
-screenshots/02-eligible-role-assignment.png
-```
+<img width="997" height="302" alt="Screenshot 2026-07-05 at 07 37 56" src="https://github.com/user-attachments/assets/010a15fc-c910-4b6c-b67a-70315b7c873d" />
 
 ---
 
@@ -100,7 +77,7 @@ Confirm that role activation requires MFA and a business justification.
 
 | Field | Value |
 |---|---|
-| User | `adm.servicedesk@0gkareemu.live` |
+| User | `admin@ogkareemu.live` |
 | Role | Authentication Administrator |
 | Justification | `INC10231 - Verified identity and resetting MFA methods after phone replacement.` |
 | Duration | 2 hours |
@@ -121,13 +98,26 @@ Confirm that role activation requires MFA and a business justification.
 The role activates only after MFA and justification are completed.
 
 ### Evidence
+**Activation Request**
+**EV-1**
+<img width="1017" height="564" alt="Screenshot 2026-07-05 at 07 39 55" src="https://github.com/user-attachments/assets/86fa478b-bd89-444c-b5cd-8cf1bae5867e" />
 
-Capture:
+**EV-2**
+<img width="1010" height="396" alt="Screenshot 2026-07-05 at 07 41 03" src="https://github.com/user-attachments/assets/5b78f719-f8e0-4857-8d10-0ca78c315489" />
 
-```text
-screenshots/04-activation-request.png
-screenshots/06-approved-activation.png
-```
+
+**Approved Activation**
+**EV-1**
+<img width="899" height="497" alt="Screenshot 2026-07-05 at 07 42 14" src="https://github.com/user-attachments/assets/917f680a-e577-43e2-a446-184caa5e4b21" />
+
+**EV-2**
+<img width="1034" height="498" alt="Screenshot 2026-07-05 at 07 42 48" src="https://github.com/user-attachments/assets/c1bf2d50-48c4-42e0-88f0-bd677471c683" />
+
+**EV-3**
+<img width="305" height="600" alt="Screenshot 2026-07-05 at 07 43 06" src="https://github.com/user-attachments/assets/ba8e796d-3c98-4aa3-bff5-8336a1dfbe6e" />
+
+**EV-4**
+<img width="1024" height="322" alt="Screenshot 2026-07-05 at 07 43 58" src="https://github.com/user-attachments/assets/342d4b7c-f926-48cd-b14e-8561803074c8" />
 
 ---
 
@@ -135,43 +125,56 @@ screenshots/06-approved-activation.png
 
 ### Objective
 
-Confirm that high-risk role activation requires approval.
+Confirm that the activation of high-risk roles requires approval.
 
 ### Test Data
 
 | Field | Value |
 |---|---|
-| User | `adm.security@0gkareemu.live` |
-| Role | Conditional Access Administrator |
-| Approver | `approver.iamlead@0gkareemu.live` |
-| Justification | `CHG2044 - Update report-only Conditional Access MFA policy.` |
-| Duration | 1 hour |
+| User | `admin@ogkareemu.live` |
+| Role | Authentication Administrator |
+| Justification | `INC10231 - Verified identity and resetting MFA methods after phone replacement.` |
+| Duration | 2 hours |
 
 ### Steps
-
-1. Sign in as the requesting admin.
+1. Sign in as the lab admin account.
 2. Open PIM.
-3. Request activation for `Conditional Access Administrator`.
-4. Complete MFA.
-5. Enter change reference and justification.
-6. Submit request.
-7. Sign in as approver.
-8. Review pending approval.
-9. Approve the request.
-10. Confirm requester receives active role.
+3. Select `My roles`.
+4. Select the eligible role.
+5. Click activate.
+6. Complete MFA prompt.
+7. Enter justification and ticket number.
+9. Submit request.
+10. Sign in as approver.
+11. Review pending approval.
+12. Approve the request.
+13. Confirm requester receives active role.
 
 ### Expected Result
 
 The role does not activate until the approver approves the request.
 
 ### Evidence
+**Activation Request**
+**EV-1**
+<img width="1017" height="564" alt="Screenshot 2026-07-05 at 07 39 55" src="https://github.com/user-attachments/assets/86fa478b-bd89-444c-b5cd-8cf1bae5867e" />
 
-Capture:
+**EV-2**
+<img width="1010" height="396" alt="Screenshot 2026-07-05 at 07 41 03" src="https://github.com/user-attachments/assets/5b78f719-f8e0-4857-8d10-0ca78c315489" />
 
-```text
-screenshots/05-approval-request.png
-screenshots/06-approved-activation.png
-```
+
+**Approved Activation**
+**EV-1**
+<img width="899" height="497" alt="Screenshot 2026-07-05 at 07 42 14" src="https://github.com/user-attachments/assets/917f680a-e577-43e2-a446-184caa5e4b21" />
+
+**EV-2**
+<img width="1034" height="498" alt="Screenshot 2026-07-05 at 07 42 48" src="https://github.com/user-attachments/assets/c1bf2d50-48c4-42e0-88f0-bd677471c683" />
+
+**EV-3**
+<img width="305" height="600" alt="Screenshot 2026-07-05 at 07 43 06" src="https://github.com/user-attachments/assets/ba8e796d-3c98-4aa3-bff5-8336a1dfbe6e" />
+
+**EV-4**
+<img width="1024" height="322" alt="Screenshot 2026-07-05 at 07 43 58" src="https://github.com/user-attachments/assets/342d4b7c-f926-48cd-b14e-8561803074c8" />
 
 ---
 
@@ -185,9 +188,9 @@ Confirm that activated privileged access expires automatically after the configu
 
 | Field | Value |
 |---|---|
-| User | `adm.security@0gkareemu.live` |
-| Role | Conditional Access Administrator |
-| Activation Duration | 1 hour |
+| User | `admin@ogkareemu.live` |
+| Role | Authentication Administrator |
+| Activation Duration | 2 hour |
 
 ### Steps
 
@@ -201,13 +204,11 @@ Confirm that activated privileged access expires automatically after the configu
 The user loses active privileged access after the activation window ends.
 
 ### Evidence
+**EV-1**
+<img width="1024" height="322" alt="Screenshot 2026-07-05 at 07 43 58" src="https://github.com/user-attachments/assets/3786ab9f-fcc6-4d37-b666-cd9031f5e826" />
 
-Capture:
+**EV-2**
 
-```text
-screenshots/07-active-role-confirmation.png
-screenshots/08-role-expired.png
-```
 
 ---
 
@@ -240,11 +241,9 @@ PIM audit history shows privileged role actions such as:
 ### Evidence
 
 Capture:
+<img width="963" height="433" alt="Screenshot 2026-07-05 at 07 45 31" src="https://github.com/user-attachments/assets/43561c8a-7113-4594-a3db-be2918eecc33" />
 
-```text
-screenshots/09-pim-audit-history.png
-screenshots/10-entra-audit-log.png
-```
+
 
 ---
 
@@ -252,9 +251,9 @@ screenshots/10-entra-audit-log.png
 
 | Date | User | Role | Action | Justification | Approver | Result |
 |---|---|---|---|---|---|---|
-| 2026-06-22 | `adm.servicedesk@0gkareemu.live` | Authentication Administrator | Activated | `INC10231 - MFA reset` | N/A | Successful |
-| 2026-06-22 | `adm.security@0gkareemu.live` | Conditional Access Administrator | Requested activation | `CHG2044 - CA policy update` | `approver.iamlead@0gkareemu.live` | Approved |
-| 2026-06-22 | `adm.security@0gkareemu.live` | Conditional Access Administrator | Deactivated | Activation expired | System | Successful |
+| 2026-07-05 | `admin@ogkareemu.live` | Authentication Administrator | Activated | `INC10231 - MFA reset` | N/A | Successful |
+| 2026-07-05 | `admin@ogkareemu.live` | Authentication Administrator | Requested activation | `INC10231 - MFA reset` | `l*****************@ogkareemu.live` | Approved |
+| 2026-07-05 | `admin@ogkareemu.live` | Authentication Administrator | Deactivated | Activation expired | System | Successful |
 
 ---
 
@@ -272,34 +271,16 @@ screenshots/10-entra-audit-log.png
 
 ---
 
-## Evidence Redaction Guidance
-
-Before publishing screenshots to GitHub, redact:
-
-- Real user names
-- Real email addresses outside the lab domain
-- Tenant IDs
-- Object IDs
-- IP addresses
-- Device IDs
-- Correlation IDs
-- Internal ticket numbers from production systems
-- Any production organisation name
-
-For a portfolio project, use only lab users and lab tenant data.
-
----
-
 ## Final Validation Summary
 
 | Control | Pass Criteria | Result |
 |---|---|---|
-| Eligible assignment configured | User is eligible, not permanently active | Pending screenshot |
-| MFA required | Activation requires MFA | Pending screenshot |
-| Justification required | Activation requires business reason | Pending screenshot |
-| Approval required for high-risk role | Request waits for approver | Pending screenshot |
-| Activation is time-bound | Role expires after configured duration | Pending screenshot |
-| Audit history available | Activation appears in audit report | Pending screenshot |
+| Eligible assignment configured | User is eligible, not permanently active | screenshot attached |
+| MFA required | Activation requires MFA | screenshot attached |
+| Justification required | Activation requires business reason | screenshot attached |
+| Approval required for high-risk role | Request waits for approver | screenshot attached |
+| Activation is time-bound | Role expires after configured duration | screenshot attached |
+| Audit history available | Activation appears in audit report | screenshot attached |
 
 ---
 
