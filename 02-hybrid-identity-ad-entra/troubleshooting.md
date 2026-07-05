@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document captures common issues, checks, and fixes for the hybrid identity lab using Active Directory, Microsoft Entra ID, Entra Connect Sync, custom domain `0gkareemu.live`, and the Microsoft Entra provisioning agent.
+This document captures common issues, checks, and fixes for the hybrid identity lab using Active Directory, Microsoft Entra ID, Entra Connect Sync, custom domain `ogkareemu.live`, and the Microsoft Entra provisioning agent.
 
 ---
 
@@ -34,7 +34,7 @@ When troubleshooting hybrid identity, use this order:
 #### Check user OU
 
 ```powershell
-Get-ADUser john.smith -Properties DistinguishedName | Select-Object Name,DistinguishedName
+Get-ADUser acarter -Properties DistinguishedName | Select-Object Name,DistinguishedName
 ```
 
 Confirm the user is in an OU included in Entra Connect Sync scope.
@@ -75,8 +75,8 @@ Check:
 
 ### Symptoms
 
-- User appears as `user@tenant.onmicrosoft.com`.
-- User does not appear as `user@0gkareemu.live`.
+- User appears as `acarter@tenant.onmicrosoft.com`.
+- User does not appear as `acarter@ogkareemu.live`.
 - User cannot sign in with expected UPN.
 
 ### Checks
@@ -84,13 +84,13 @@ Check:
 #### Check AD user UPN
 
 ```powershell
-Get-ADUser john.smith -Properties UserPrincipalName | Select-Object Name,UserPrincipalName
+Get-ADUser acarter -Properties UserPrincipalName | Select-Object Name,UserPrincipalName
 ```
 
 Expected:
 
 ```text
-john.smith@0gkareemu.live
+acarter@ogkareemu.live
 ```
 
 #### Check AD UPN suffixes
@@ -102,7 +102,7 @@ Get-ADForest | Select-Object -ExpandProperty UPNSuffixes
 Expected list includes:
 
 ```text
-0gkareemu.live
+ogkareemu.live
 ```
 
 #### Check Entra custom domain
@@ -113,7 +113,7 @@ Confirm the domain is verified in Microsoft Entra ID.
 
 | Cause | Fix |
 |---|---|
-| Custom domain not verified | Verify `0gkareemu.live` in Entra ID |
+| Custom domain not verified | Verify `ogkareemu.live` in Entra ID |
 | UPN suffix not added in AD | Add suffix in Active Directory Domains and Trusts |
 | User still has internal UPN | Update AD user UPN |
 | Sync has not run | Run delta sync |
@@ -134,7 +134,7 @@ Confirm the domain is verified in Microsoft Entra ID.
 
 ```powershell
 Get-ADUser -Filter * -Properties UserPrincipalName |
-Where-Object {$_.UserPrincipalName -eq "john.smith@0gkareemu.live"} |
+Where-Object {$_.UserPrincipalName -eq "acarter@ogkareemu.live"} |
 Select-Object Name,SamAccountName,UserPrincipalName
 ```
 
@@ -142,7 +142,7 @@ Select-Object Name,SamAccountName,UserPrincipalName
 
 ```powershell
 Get-ADUser -Filter * -Properties Mail |
-Where-Object {$_.Mail -eq "john.smith@0gkareemu.live"} |
+Where-Object {$_.Mail -eq "acarter@ogkareemu.live"} |
 Select-Object Name,SamAccountName,Mail
 ```
 
@@ -167,7 +167,7 @@ Select-Object Name,SamAccountName,Mail
 #### Check source AD attribute
 
 ```powershell
-Get-ADUser john.smith -Properties Department,Title,Manager,EmployeeID |
+Get-ADUser acarter -Properties Department,Title,Manager,EmployeeID |
 Select-Object Name,Department,Title,Manager,EmployeeID
 ```
 
@@ -209,14 +209,14 @@ Check Entra Connect configuration for selected sign-in method.
 #### Confirm account state in AD
 
 ```powershell
-Get-ADUser john.smith -Properties Enabled,LockedOut,UserPrincipalName |
+Get-ADUser acarter -Properties Enabled,LockedOut,UserPrincipalName |
 Select-Object Name,Enabled,LockedOut,UserPrincipalName
 ```
 
 #### Force password change in lab if required
 
 ```powershell
-Set-ADAccountPassword john.smith -Reset -NewPassword (ConvertTo-SecureString "TempPass123!" -AsPlainText -Force)
+Set-ADAccountPassword acarter -Reset -NewPassword (ConvertTo-SecureString "TempPass123!" -AsPlainText -Force)
 Enable-ADAccount john.smith
 ```
 
@@ -225,7 +225,7 @@ Enable-ADAccount john.smith
 | Cause | Fix |
 |---|---|
 | User disabled in AD | Enable user if appropriate |
-| Wrong UPN | Correct UPN to `@0gkareemu.live` |
+| Wrong UPN | Correct UPN to `@ogkareemu.live` |
 | Password sync not completed | Wait or force sync |
 | Account locked | Unlock account in AD |
 | Conditional Access blocking | Review sign-in logs |
@@ -253,7 +253,7 @@ Enable-ADAccount john.smith
 ### Example attributes to check
 
 ```powershell
-Get-ADUser john.smith -Properties Department,EmployeeID,EmployeeType,Manager |
+Get-ADUser acarter -Properties Department,EmployeeID,EmployeeType,Manager |
 Select-Object Name,Department,EmployeeID,EmployeeType,Manager
 ```
 
@@ -319,7 +319,7 @@ Confirm the service account or agent configuration has permission to perform the
 
 ### Explanation
 
-Microsoft Entra Connect Sync and Microsoft Entra Cloud Sync are different synchronization approaches. A lab may contain both the classic Entra Connect Sync server and the Microsoft Entra provisioning agent, but they should not be configured to synchronize the same objects in conflicting ways.
+Microsoft Entra Connect Sync and Microsoft Entra Cloud Sync are different synchronisation approaches. A lab may contain both the classic Entra Connect Sync server and the Microsoft Entra provisioning agent, but they should not be configured to synchronise the same objects in conflicting ways.
 
 ### Safe design principle
 
@@ -345,14 +345,14 @@ Avoid configuring Entra Cloud Sync and Entra Connect Sync to manage the same use
 
 ### Cause
 
-In a hybrid model where the user is synchronized from Active Directory, the AD account state is authoritative. If the account is enabled in AD, the cloud state may be overwritten during synchronization.
+In a hybrid model where the user is synchronised from Active Directory, the AD account state is authoritative. If the account is enabled in AD, the cloud state may be overwritten during synchronisation.
 
 ### Fix
 
 Disable the account in Active Directory first.
 
 ```powershell
-Disable-ADAccount john.smith
+Disable-ADAccount acarter
 Start-ADSyncSyncCycle -PolicyType Delta
 ```
 
@@ -368,20 +368,20 @@ The disabled state flows from AD to Microsoft Entra ID.
 
 ### Symptoms
 
-- `0gkareemu.live` remains unverified in Microsoft Entra ID.
+- `ogkareemu.live` remains unverified in Microsoft Entra ID.
 - TXT record verification fails.
 
 ### Checks
 
 - Confirm DNS TXT record was created at the domain registrar/DNS provider.
-- Confirm there are no spelling mistakes: `0gkareemu.live` uses the number zero at the beginning.
+- Confirm there are no spelling mistakes: `ogkareemu.live` uses the number zero at the beginning.
 - Wait for DNS propagation.
 - Confirm the TXT value matches exactly.
 
 ### Example DNS check
 
 ```powershell
-Resolve-DnsName -Name 0gkareemu.live -Type TXT
+Resolve-DnsName -Name ogkareemu.live -Type TXT
 ```
 
 ---
@@ -397,7 +397,7 @@ Resolve-DnsName -Name 0gkareemu.live -Type TXT
 ### Checks
 
 ```powershell
-Get-ADUser john.smith -Properties Manager | Select-Object Name,Manager
+Get-ADUser acarter -Properties Manager | Select-Object Name,Manager
 ```
 
 Confirm:
@@ -409,7 +409,7 @@ Confirm:
 ### Fix
 
 - Populate the manager in AD.
-- Ensure manager object is also synchronized.
+- Ensure manager object is also synchronised.
 - Run delta sync.
 
 ---
@@ -446,7 +446,7 @@ Use this checklist during every sync or lifecycle test.
 | Check | Pass/Fail | Notes |
 |---|---|---|
 | AD user exists in correct OU |  |  |
-| UPN uses `@0gkareemu.live` |  |  |
+| UPN uses `@ogkareemu.live` |  |  |
 | Required attributes populated |  |  |
 | User has expected AD groups |  |  |
 | Delta sync completed |  |  |
@@ -465,7 +465,7 @@ Use this checklist during every sync or lifecycle test.
 ### AD user check
 
 ```powershell
-Get-ADUser john.smith -Properties * | 
+Get-ADUser acarter -Properties * | 
 Select-Object Name,SamAccountName,UserPrincipalName,Mail,Enabled,Department,Title,Manager
 ```
 
@@ -510,7 +510,7 @@ Test-NetConnection dc01.ad.iamhomelab.local -Port 636
 
 ## Lessons Learned
 
-- The UPN suffix should be planned before users are synchronized.
+- The UPN suffix should be planned before users are synchronised.
 - A verified custom domain gives a cleaner sign-in experience.
 - OU filtering reduces sync risk in labs and production.
 - Hybrid users should normally be changed from AD, not directly in Entra ID.
