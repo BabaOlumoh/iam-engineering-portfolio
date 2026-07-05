@@ -99,6 +99,7 @@ The role activates only after MFA and justification are completed.
 
 ### Evidence
 **Activation Request**
+
 **EV-1**
 <img width="1017" height="564" alt="Screenshot 2026-07-05 at 07 39 55" src="https://github.com/user-attachments/assets/86fa478b-bd89-444c-b5cd-8cf1bae5867e" />
 
@@ -107,6 +108,7 @@ The role activates only after MFA and justification are completed.
 
 
 **Approved Activation**
+
 **EV-1**
 <img width="899" height="497" alt="Screenshot 2026-07-05 at 07 42 14" src="https://github.com/user-attachments/assets/917f680a-e577-43e2-a446-184caa5e4b21" />
 
