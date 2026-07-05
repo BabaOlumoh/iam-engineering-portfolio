@@ -25,9 +25,9 @@ Example:
 
 | Account Type | Example | Purpose |
 |---|---|---|
-| Standard account | `ade.user@0gkareemu.live` | Email, Teams, normal work |
-| Admin account | `adm.ade@0gkareemu.live` | Privileged admin tasks |
-| Break-glass account | `bg.tenant.recovery@0gkareemu.live` | Emergency access only |
+| Standard account | `adam.morgan@ogkareemu.live` | Email, Teams, normal work |
+| Admin account | `admin@ogkareemu.live` | Privileged admin tasks |
+| Break-glass account | `bg@ogkareemu.live` | Emergency access only |
 
 ---
 
