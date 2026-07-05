@@ -7,7 +7,7 @@ The goal of this lab is to design and document a hybrid identity environment whe
 The architecture uses:
 
 - On-premises Active Directory Domain Services.
-- A verified Microsoft Entra custom domain: `0gkareemu.live`.
+- A verified Microsoft Entra custom domain: `ogkareemu.live`.
 - Microsoft Entra Connect Sync for directory synchronization.
 - Microsoft Entra provisioning agent for supported on-premises Lifecycle Workflow actions.
 - Microsoft Entra ID Governance for lifecycle automation.
@@ -58,7 +58,7 @@ In this design, Active Directory is the source of truth for core workforce ident
 | `givenName` | AD / HR process | First name |
 | `sn` | AD / HR process | Surname |
 | `displayName` | AD / HR process | Full display name |
-| `userPrincipalName` | AD | Must use `@0gkareemu.live` |
+| `userPrincipalName` | AD | Must use `@ogkareemu.live` |
 | `mail` | AD / Exchange attributes | Should match primary email where possible |
 | `department` | AD / HR process | Used for group and access logic |
 | `jobTitle` | AD / HR process | Used for role mapping |
@@ -91,8 +91,8 @@ Example:
 
 ```text
 Local AD domain:       ad.iamhomelab.local
-Cloud sign-in domain:  0gkareemu.live
-User UPN:              jane.doe@0gkareemu.live
+Cloud sign-in domain:  ogkareemu.live
+User UPN:              jane.doe@ogkareemu.live
 ```
 
 This avoids users signing into Microsoft 365 with an internal or non-routable domain.
@@ -232,7 +232,7 @@ In a small lab, Entra Connect Sync and the provisioning agent may run on the sam
 
 | Risk | Impact | Mitigation |
 |---|---|---|
-| Wrong UPN suffix | Users cannot sign in cleanly | Use verified domain `0gkareemu.live` as AD UPN suffix |
+| Wrong UPN suffix | Users cannot sign in cleanly | Use verified domain `ogkareemu.live` as AD UPN suffix |
 | Duplicate UPN or proxy address | Sync failure | Validate uniqueness before sync |
 | Accidental sync of service accounts | Security exposure | Use OU filtering |
 | Sync server compromise | High identity risk | Treat sync server as Tier 0 |
