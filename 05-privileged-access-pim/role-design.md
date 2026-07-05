@@ -87,20 +87,6 @@ Sensitive roles include:
 
 ---
 
-## Recommended Lab Accounts
-
-| Account | Type | Purpose |
-|---|---|---|
-| `lab.user1@0gkareemu.live` | Standard user | Test non-admin access |
-| `adm.iamanalyst@0gkareemu.live` | Admin account | Eligible IAM role activation |
-| `adm.servicedesk@0gkareemu.live` | Admin account | Authentication Administrator testing |
-| `adm.security@0gkareemu.live` | Admin account | Security role activation testing |
-| `approver.iamlead@0gkareemu.live` | Approver account | Approves privileged role activation |
-| `bg.recovery1@0gkareemu.live` | Break-glass account | Emergency tenant recovery |
-| `bg.recovery2@0gkareemu.live` | Break-glass account | Secondary emergency recovery |
-
----
-
 ## Role Design by Operational Scenario
 
 ### Scenario 1: Service Desk MFA Reset
