@@ -218,7 +218,7 @@ Enable notifications for:
 
 ### 5. Save and Test
 
-Test with a lab admin account and capture screenshots of:
+Test with a lab admin account:
 
 - Eligible assignment
 - Activation request
@@ -246,7 +246,7 @@ Recommended controls:
 
 ---
 
-## Example Runbook: PIM Activation for MFA Reset
+## Runbook: PIM Activation for MFA Reset
 
 1. Verify the user request in the ticketing system.
 2. Confirm the user's identity using the approved identity verification process.
@@ -262,7 +262,7 @@ Recommended controls:
 
 ---
 
-## Example Runbook: PIM Activation for Conditional Access Change
+## Runbook: PIM Activation for Conditional Access Change
 
 1. Confirm approved change request exists.
 2. Confirm backout plan exists.
@@ -291,14 +291,3 @@ Recommended controls:
 | Audit logging | Activation appears in PIM audit history |
 | Least privilege | User activates only the role needed for task |
 
----
-
-## Portfolio Notes
-
-This workflow shows employers that I understand how privileged access should work in a real organisation:
-
-- Access is not granted permanently by default.
-- Sensitive roles require independent approval.
-- Support teams can still work efficiently using scoped roles.
-- Every privileged action should be traceable.
-- Emergency access is planned separately from normal administration.
