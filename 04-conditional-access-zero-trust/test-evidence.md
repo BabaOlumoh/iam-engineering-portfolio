@@ -83,7 +83,8 @@ Access is interrupted or blocked because MFA was not satisfied.
 
 ### Evidence
 
-<img width="548" height="627" alt="Screenshot 2026-06-27 at 23 19 16" src="https://github.com/user-attachments/assets/014c9174-375b-4002-9dd9-04f6bbfcc7d0" />
+ <img width="826" height="660" alt="Screenshot 2026-06-28 at 16 03 44" src="https://github.com/user-attachments/assets/49aee423-e043-4602-b279-68959a1fd9a9" />
+
 
 
 ## Test Case 3 - Break-Glass Account Is Excluded
@@ -151,7 +152,8 @@ The admin user must complete strong MFA before accessing admin resources.
 ### Evidence
 
 <img width="996" height="613" alt="Screenshot 2026-06-27 at 23 55 46" src="https://github.com/user-attachments/assets/b12f718c-5cfa-44a6-b435-827c07661b5c" />
-<img width="463" height="413" alt="Screenshot 2026-06-28 at 00 03 07" src="https://github.com/user-attachments/assets/daa6e09f-055e-4276-95a4-42fa03e3f299" />
+ <img width="826" height="660" alt="Screenshot 2026-06-28 at 16 03 44" src="https://github.com/user-attachments/assets/187d3ccf-d70a-463a-93d7-4fef1aab9a3e" />
+
 
 
 
