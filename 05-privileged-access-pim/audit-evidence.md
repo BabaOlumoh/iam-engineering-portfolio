@@ -113,10 +113,11 @@ The role activates only after MFA and justification are completed.
 <img width="899" height="497" alt="Screenshot 2026-07-05 at 07 42 14" src="https://github.com/user-attachments/assets/917f680a-e577-43e2-a446-184caa5e4b21" />
 
 **EV-2**
-<img width="1034" height="498" alt="Screenshot 2026-07-05 at 07 42 48" src="https://github.com/user-attachments/assets/c1bf2d50-48c4-42e0-88f0-bd677471c683" />
+
+<img width="305" height="600" alt="Screenshot 2026-07-05 at 07 43 06" src="https://github.com/user-attachments/assets/ba8e796d-3c98-4aa3-bff5-8336a1dfbe6e" />
 
 **EV-3**
-<img width="305" height="600" alt="Screenshot 2026-07-05 at 07 43 06" src="https://github.com/user-attachments/assets/ba8e796d-3c98-4aa3-bff5-8336a1dfbe6e" />
+<img width="1034" height="498" alt="Screenshot 2026-07-05 at 07 42 48" src="https://github.com/user-attachments/assets/c1bf2d50-48c4-42e0-88f0-bd677471c683" />
 
 **EV-4**
 <img width="1024" height="322" alt="Screenshot 2026-07-05 at 07 43 58" src="https://github.com/user-attachments/assets/342d4b7c-f926-48cd-b14e-8561803074c8" />
