@@ -6,7 +6,7 @@ This project demonstrates how to reduce standing administrative privileges in Mi
 
 The lab shows how privileged roles can be assigned as **eligible**, activated only when required, protected with **MFA**, controlled through **approval workflows**, and reviewed through **audit evidence**.
 
-This project is designed as a recruiter-facing IAM portfolio project. It shows practical understanding of:
+This project shows practical understanding of:
 
 - Privileged access management
 - Just-in-time access
@@ -78,9 +78,6 @@ By the end of this project, the lab should demonstrate that:
 ├── role-design.md
 ├── approval-workflow.md
 ├── audit-evidence.md
-└── screenshots/
-    ├── README.md
-    └── .gitkeep
 ```
 
 ---
@@ -199,9 +196,7 @@ It proves practical understanding of:
 
 ---
 
-## Suggested Screenshots
-
-Add screenshots to the `screenshots/` folder showing:
+## Screenshots
 
 1. PIM landing page
 2. Microsoft Entra roles page
@@ -213,16 +208,3 @@ Add screenshots to the `screenshots/` folder showing:
 8. Role expiration or deactivation
 9. PIM audit history
 10. Entra audit log showing role activation
-
-Use fake lab accounts only. Do not publish production tenant names, user details, object IDs, IP addresses, or real business data.
-
----
-
-## References
-
-- Microsoft Learn: What is Privileged Identity Management?
-- Microsoft Learn: Assign Microsoft Entra roles in PIM
-- Microsoft Learn: Activate Microsoft Entra roles in PIM
-- Microsoft Learn: Configure Microsoft Entra role settings in PIM
-- Microsoft Learn: Approve or deny requests for Microsoft Entra roles in PIM
-- Microsoft Learn: View audit log report for Microsoft Entra roles in PIM
