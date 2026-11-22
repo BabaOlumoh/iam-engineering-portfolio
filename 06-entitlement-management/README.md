@@ -12,9 +12,9 @@ This project is designed to show practical Identity and Access Management skills
 
 An organisation has several Microsoft 365 resources that should not be assigned manually by Service Desk without approval. Examples include:
 
-- Finance SharePoint site access
-- HR document library access
-- Project Teams membership
+- SharePoint site access
+- Document library access
+- Teams membership
 - Temporary access to Microsoft 365 groups
 - Contractor or guest collaboration access
 - Application access requiring manager or resource-owner approval
@@ -30,7 +30,7 @@ The objective of this project is to demonstrate the following IAM capabilities:
 - Design an access package for controlled access to business resources
 - Define who can request access
 - Configure approval requirements
-- Require business justification from requestors
+- Require business justification from requesters
 - Apply time-bound access expiry
 - Demonstrate access assignment after approval
 - Demonstrate access removal after expiry or manual removal
@@ -132,16 +132,7 @@ Entitlement Management improves the process by making access:
 - Service Desk handover process
 - Access lifecycle management
 
-## Recruiter / Interview Talking Points
 
-This project can be discussed in interviews using the following points:
-
-- I designed an access package to reduce manual access assignment and improve governance.
-- I configured access policies so users must provide justification before access is approved.
-- I applied expiry to prevent standing access from remaining indefinitely.
-- I documented approval and evidence requirements to support audit readiness.
-- I used Entitlement Management to support least privilege and temporary access.
-- I considered Service Desk operational handover so access requests follow a repeatable process.
 
 ## Example Outcome
 
@@ -155,6 +146,4 @@ Before this design, access was assigned manually through group membership change
 | `approval-expiry-policy.md` | Documents approval stages, justification, expiry, extensions, and removal rules |
 | `test-evidence.md` | Provides evidence checklist and test scenarios for validating the lab |
 
-## Screenshots to Capture
 
-Recommended screenshots are listed in `screenshots/README.md`. These should include access package configuration, request policy, approval screen, assignment result, audit logs, and expiry/removal evidence.
