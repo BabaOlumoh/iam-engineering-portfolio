@@ -10,44 +10,26 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 
 | Item | Example Value |
 |---|---|
-| Tenant | 0gkareemu.live lab tenant |
+| Tenant | ogkareemu.live lab tenant |
 | Identity platform | Microsoft Entra ID |
 | Governance feature | Microsoft Entra Entitlement Management |
 | Access package | AP-FINANCE-REPORTING-TEMP |
-| Requestor | test.user@0gkareemu.live |
-| Approver | finance.manager@0gkareemu.live |
-| Resource group | M365-FIN-Reporting-Readers |
+| Requestor | Babatunde@ogkareemu.live |
+| Approver | *@ogkareemu.live |
+| Resource group | SG-Finance-Reporting-SharePoint |
 | Assignment duration | 30 days |
 
-## Evidence Naming Standard
-
-Use a clear naming standard for screenshots:
-
-```text
-01-access-package-overview.png
-02-catalogue-configuration.png
-03-resource-roles-added.png
-04-request-policy-scope.png
-05-approval-settings.png
-06-lifecycle-expiry-settings.png
-07-my-access-request.png
-08-approver-review-screen.png
-09-approved-assignment.png
-10-user-added-to-resource-group.png
-11-audit-log-request-approved.png
-12-assignment-expired-or-removed.png
-```
 
 ## Test Case 1 - Access Package Exists
 
 | Field | Detail |
 |---|---|
-| Objective | Confirm the access package exists with the correct name and catalogue |
+| Objective | Confirm the access package exists with the correct name and catalog |
 | Precondition | Access package has been created |
 | Test steps | Open Entra admin center > Identity Governance > Entitlement Management > Access packages |
 | Expected result | AP-FINANCE-REPORTING-TEMP is visible |
-| Evidence | Screenshot of access package overview |
-| Status | Pass / Fail |
+| Evidence | placeholder |
+| Status | Pass |
 
 ## Test Case 2 - Resources Added to Access Package
 
