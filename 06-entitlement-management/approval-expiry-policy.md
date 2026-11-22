@@ -76,7 +76,7 @@ The approver should deny when:
 - The user does not need the access for their role
 - The request is for convenience rather than business need
 - The access should be requested through a different package
-- The user is a guest or contractor and this package is internal-only
+- The user is a guest or contractor, and this package is internal-only
 
 ## Approval SLA
 
