@@ -40,7 +40,7 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Test steps | Open access package > Resource roles |
 | Expected result | Finance Reporting resource role is listed |
 | Evidence | Screenshot of resource roles |
-| Status | Pass / Fail |
+| Status | Pass  |
 
 ## Test Case 3 - Requestor Scope is Correct
 
@@ -51,7 +51,7 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Test steps | Open access package policy > Requests |
 | Expected result | Requestor scope is limited to internal users or selected group |
 | Evidence | Screenshot of request policy |
-| Status | Pass / Fail |
+| Status | Pass  |
 
 ## Test Case 4 - Approval is Required
 
@@ -62,7 +62,7 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Test steps | Open access package policy > Approval settings |
 | Expected result | Approval is enabled and approver is configured |
 | Evidence | Screenshot of approval settings |
-| Status | Pass / Fail |
+| Status | Pass  |
 
 ## Test Case 5 - Business Justification is Required
 
@@ -73,7 +73,7 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Test steps | Request package from My Access portal |
 | Expected result | Request cannot be submitted without required information |
 | Evidence | Screenshot of request form |
-| Status | Pass / Fail |
+| Status | Pass |
 
 ## Test Case 6 - User Submits Access Request
 
@@ -84,7 +84,7 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Test steps | My Access portal > select package > enter justification > submit |
 | Expected result | Request is submitted and pending approval |
 | Evidence | Screenshot of request history |
-| Status | Pass / Fail |
+| Status | Pass  |
 
 ## Test Case 7 - Approver Approves Request
 
@@ -95,7 +95,7 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Test steps | Approver opens My Access portal > Approvals > approves request |
 | Expected result | Request status changes to approved |
 | Evidence | Screenshot of approval decision |
-| Status | Pass / Fail |
+| Status | Pass  |
 
 ## Test Case 8 - User Receives Access After Approval
 
@@ -106,7 +106,7 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Test steps | Check user membership in target group/resource |
 | Expected result | User is added to the resource through the access package assignment |
 | Evidence | Screenshot of group membership or assignment state |
-| Status | Pass / Fail |
+| Status | Pass  |
 
 ## Test Case 9 - Assignment Has Expiry
 
@@ -117,7 +117,7 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Test steps | Open access package assignments |
 | Expected result | Assignment shows expiry date |
 | Evidence | Screenshot of assignment details |
-| Status | Pass / Fail |
+| Status | Pass  |
 
 ## Test Case 10 - Access Can Be Removed
 
@@ -128,7 +128,7 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Test steps | Remove assignment or allow expiry in test policy |
 | Expected result | User no longer has resource access |
 | Evidence | Screenshot of removed assignment and group membership |
-| Status | Pass / Fail |
+| Status | Pass |
 
 ## Test Case 11 - Audit Logs Capture Activity
 
@@ -139,18 +139,9 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Test steps | Open Entra audit logs or entitlement management request history |
 | Expected result | Request, approval, assignment, and removal events are visible |
 | Evidence | Screenshot/export of audit logs |
-| Status | Pass / Fail |
+| Status | Pass  |
 
-## Test Case 12 - Service Desk Process Validation
 
-| Field | Detail |
-|---|---|
-| Objective | Confirm Service Desk does not bypass entitlement process |
-| Precondition | User raises access request ticket |
-| Test steps | Service Desk directs user to My Access portal instead of manually adding group |
-| Expected result | Access follows approved governance workflow |
-| Evidence | Example ticket note or runbook screenshot |
-| Status | Pass / Fail |
 
 ## Evidence Checklist
 
@@ -191,6 +182,4 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 - Evidence capture is important for audits and interviews.
 - Access packages should be designed with clear ownership and naming standards.
 
-## Interview Explanation
 
-I built an entitlement management lab using Microsoft Entra ID Governance. The project demonstrates how access packages can be used to govern access to Microsoft 365 resources. Users request access through My Access, provide justification, and wait for business owner approval. Once approved, access is assigned automatically and expires after a defined period. I also captured test evidence showing request submission, approval, assignment, expiry, and audit logs.
