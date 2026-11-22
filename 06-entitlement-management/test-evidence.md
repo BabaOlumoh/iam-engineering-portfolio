@@ -28,7 +28,7 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Precondition | Access package has been created |
 | Test steps | Open Entra admin center > Identity Governance > Entitlement Management > Access packages |
 | Expected result | AP-FINANCE-REPORTING-TEMP is visible |
-| Evidence | 06-entitlement-management/screenshots/access-package-overview.png |
+| Evidence | [06-entitlement-management/screenshots/access-package-overview.png](https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/d48d22afc181f35ec15f4cae40e1652429d53035/06-entitlement-management/screenshots/access-package-overview.png) |
 | Status | Pass |
 
 ## Test Case 2 - Resources Added to Access Package
