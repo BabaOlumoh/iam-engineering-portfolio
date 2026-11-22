@@ -9,7 +9,7 @@ This document explains the design of the access package used in this lab. The go
 The access package is designed around the following IAM principles:
 
 - Least privilege
-- Business owner approval
+- Business owner/Access package owner approval
 - Time-bound access
 - Clear ownership
 - Repeatable access request process
@@ -37,13 +37,13 @@ AP-FINANCE-REPORTING-TEMP
 | REPORTING | Access purpose |
 | TEMP | Temporary access |
 
-## Catalogue Design
+## Catalog Design
 
-| Catalogue | Purpose |
+| Catalog | Purpose |
 |---|---|
 | Business Access Packages | Standard business access packages for internal users |
 
-A dedicated catalogue makes it easier to delegate access package management to business or IAM owners without granting excessive tenant-wide permissions.
+A dedicated catalog makes it easier to delegate access package management to business or IAM owners without granting excessive tenant-wide permissions.
 
 ## Access Package Scope
 
@@ -93,7 +93,7 @@ The user completes the following steps:
 ## Example Business Justification
 
 ```text
-I require temporary access to the Finance Reporting workspace to support the June month-end reconciliation activity. Access is required for 30 days and approved by my line manager.
+I require this package to access finance report for the month of November to prepare the quarterly finance report.
 ```
 
 ## Access Assignment Flow
@@ -175,18 +175,6 @@ This lab package is designed for internal users only. For guest users, a separat
 | Team | Responsibility |
 |---|---|
 | Service Desk | Direct users to My Access portal and handle basic request questions |
-| IAM Team | Configure and maintain packages, policies, catalogues, and evidence |
+| IAM Team | Configure and maintain packages, policies, catalogs, and evidence |
 | Business Owner | Approve or deny requests based on business need |
 | Security Team | Review logs, excessive access, and governance posture |
-
-## Out of Scope
-
-The following items are not included in this basic lab but can be added as future improvements:
-
-- External user access package
-- Connected organisations
-- Terms of use requirement
-- Automated access reviews with manager attestation
-- Integration with ticketing system
-- Graph API automation
-- Privileged access groups with PIM
