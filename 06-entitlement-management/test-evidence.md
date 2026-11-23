@@ -39,7 +39,7 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Precondition | Group or SharePoint resource exists |
 | Test steps | Open access package > Resource roles |
 | Expected result | Finance Reporting resource role is listed |
-| Evidence | Screenshot of resource roles |
+| Evidence | [Screenshot of resource roles](https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/04064365d30276f5fec9f6cf5bd8c61eedc4893c/06-entitlement-management/screenshots/resource-roles-added.png) |
 | Status | Pass  |
 
 ## Test Case 3 - Requestor Scope is Correct
@@ -50,7 +50,8 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Precondition | Policy has been created |
 | Test steps | Open access package policy > Requests |
 | Expected result | Requestor scope is limited to internal users or selected group |
-| Evidence | Screenshot of request policy |
+| Evidence | [Screenshot of request policy](https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/04064365d30276f5fec9f6cf5bd8c61eedc4893c/06-entitlement-management/screenshots/request-policy-scope.png)
+https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/04064365d30276f5fec9f6cf5bd8c61eedc4893c/06-entitlement-management/screenshots/catalog-configuration-2.png |
 | Status | Pass  |
 
 ## Test Case 4 - Approval is Required
@@ -61,7 +62,7 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Precondition | Approver has been configured |
 | Test steps | Open access package policy > Approval settings |
 | Expected result | Approval is enabled and approver is configured |
-| Evidence | Screenshot of approval settings |
+| Evidence | https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/04064365d30276f5fec9f6cf5bd8c61eedc4893c/06-entitlement-management/screenshots/approval-settings.png |
 | Status | Pass  |
 
 ## Test Case 5 - Business Justification is Required
@@ -72,7 +73,9 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Precondition | Request form questions configured |
 | Test steps | Request package from My Access portal |
 | Expected result | Request cannot be submitted without required information |
-| Evidence | Screenshot of request form |
+| Evidence | https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/04064365d30276f5fec9f6cf5bd8c61eedc4893c/06-entitlement-management/screenshots/my-access-request-1.png
+
+https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/04064365d30276f5fec9f6cf5bd8c61eedc4893c/06-entitlement-management/screenshots/my-access-request-2.png |
 | Status | Pass |
 
 ## Test Case 6 - User Submits Access Request
@@ -83,7 +86,7 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Precondition | User is in requestor scope |
 | Test steps | My Access portal > select package > enter justification > submit |
 | Expected result | Request is submitted and pending approval |
-| Evidence | Screenshot of request history |
+| Evidence | [Screenshot of request history](https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/04064365d30276f5fec9f6cf5bd8c61eedc4893c/06-entitlement-management/screenshots/my-access-request-2.png) |
 | Status | Pass  |
 
 ## Test Case 7 - Approver Approves Request
@@ -94,7 +97,9 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Precondition | Request is pending approval |
 | Test steps | Approver opens My Access portal > Approvals > approves request |
 | Expected result | Request status changes to approved |
-| Evidence | Screenshot of approval decision |
+| Evidence | https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/04064365d30276f5fec9f6cf5bd8c61eedc4893c/06-entitlement-management/screenshots/approver-review-screen-1.png
+
+https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/04064365d30276f5fec9f6cf5bd8c61eedc4893c/06-entitlement-management/screenshots/approver-review-screen-3.png |
 | Status | Pass  |
 
 ## Test Case 8 - User Receives Access After Approval
@@ -105,7 +110,7 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Precondition | Request has been approved |
 | Test steps | Check user membership in target group/resource |
 | Expected result | User is added to the resource through the access package assignment |
-| Evidence | Screenshot of group membership or assignment state |
+| Evidence | [Screenshot of group membership or assignment state](https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/04064365d30276f5fec9f6cf5bd8c61eedc4893c/06-entitlement-management/screenshots/approved-assignment.png) |
 | Status | Pass  |
 
 ## Test Case 9 - Assignment Has Expiry
@@ -127,7 +132,7 @@ The aim is to prove that access requests, approvals, assignments, expiry, and re
 | Precondition | Assignment is active |
 | Test steps | Remove assignment or allow expiry in test policy |
 | Expected result | User no longer has resource access |
-| Evidence | Screenshot of removed assignment and group membership |
+| Evidence | https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/04064365d30276f5fec9f6cf5bd8c61eedc4893c/06-entitlement-management/screenshots/assignment-expired-or-removed.png |
 | Status | Pass |
 
 ## Test Case 11 - Audit Logs Capture Activity
