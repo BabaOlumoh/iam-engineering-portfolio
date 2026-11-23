@@ -110,7 +110,9 @@ https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/04064365d30276f5fec
 | Precondition | Request has been approved |
 | Test steps | Check user membership in target group/resource |
 | Expected result | User is added to the resource through the access package assignment |
-| Evidence | [Screenshot of group membership or assignment state](https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/04064365d30276f5fec9f6cf5bd8c61eedc4893c/06-entitlement-management/screenshots/approved-assignment.png) |
+| Evidence | [Screenshot of group membership or assignment state](https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/04064365d30276f5fec9f6cf5bd8c61eedc4893c/06-entitlement-management/screenshots/approved-assignment.png) 
+
+https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/2b33148d588b31932174e6e7177efcc95b762487/06-entitlement-management/screenshots/audit-logs-captures.png |
 | Status | Pass  |
 
 ## Test Case 9 - Assignment Has Expiry
@@ -143,7 +145,7 @@ https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/04064365d30276f5fec
 | Precondition | Request and approval activity has occurred |
 | Test steps | Open Entra audit logs or entitlement management request history |
 | Expected result | Request, approval, assignment, and removal events are visible |
-| Evidence | Screenshot/export of audit logs |
+| Evidence | [Screenshot/export of audit logs](https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/2b33148d588b31932174e6e7177efcc95b762487/06-entitlement-management/screenshots/access-after-approval.png) |
 | Status | Pass  |
 
 
