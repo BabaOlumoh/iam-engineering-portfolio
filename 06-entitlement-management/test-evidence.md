@@ -149,38 +149,6 @@ https://github.com/BabaOlumoh/iam-engineering-portfolio/blob/2b33148d588b3193217
 | Status | Pass  |
 
 
-
-## Evidence Checklist
-
-| Evidence Item | Captured? |
-|---|---|
-| Access package overview | Yes / No |
-| Catalogue configuration | Yes / No |
-| Resource roles | Yes / No |
-| Requestor scope | Yes / No |
-| Approval settings | Yes / No |
-| Lifecycle expiry settings | Yes / No |
-| My Access request form | Yes / No |
-| Request pending approval | Yes / No |
-| Approval decision | Yes / No |
-| Assignment active | Yes / No |
-| User added to group/resource | Yes / No |
-| Assignment expiry date | Yes / No |
-| Manual removal or expiry evidence | Yes / No |
-| Audit log evidence | Yes / No |
-
-## Example Test Result Summary
-
-| Test Area | Result | Notes |
-|---|---|---|
-| Access package creation | Pass | Package created in Business Access Packages catalogue |
-| Requestor scope | Pass | Internal users can request |
-| Approval workflow | Pass | Finance Manager approval required |
-| Justification | Pass | Requestor must provide business reason |
-| Assignment | Pass | User assigned after approval |
-| Expiry | Pass | Assignment expires after configured duration |
-| Audit evidence | Pass | Request and approval events visible |
-
 ## Lessons Learned
 
 - Access packages reduce manual access assignment by Service Desk.
